@@ -2,6 +2,7 @@
 
 This is a list of high-quality courses that, for one reason or another, didn't make it into the curriculum.
 
+
 Courses | Duration | Effort
 :-- | :--: | :--:
 [Fundamentals of Journalism](https://nbcuacademy.com/course/fundamentals-of-journalism/) | - | 7 hours
