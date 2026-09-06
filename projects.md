@@ -1,83 +1,59 @@
 # Projects
 
-This page is a curated collection of well-written, step-by-step guides for learning Journalism through hands-on, project-based practice.
+A curated collection of step-by-step guides, newsroom workflows, and methodological walkthroughs for learning journalism through hands-on reporting and editorial practice.
 
 > *What I cannot create, I do not understand — Richard Feynman.*
 
-These projects are meant to support learning throughout the curriculum, not only at the end.  
-By building, writing, creating, or reconstructing real artifacts in the field, learners develop practical understanding alongside theoretical study.
+These projects are designed to accompany your studies throughout the curriculum. By reporting, interviewing, investigating, scripting, and writing real journalistic pieces, learners develop practical news judgment, ethical rigor, and narrative craftsmanship alongside theoretical study.
 
-## Tutorials
+---
 
-* [News Article](#write-your-own-news-article)
-* [Feature Story](#write-your-own-feature-story)
-* [Investigative Report](#conduct-your-own-investigative-report)
-* [Profile](#write-your-own-profile)
-* [Opinion Piece / Editorial](#write-your-own-opinion-piece)
-* [Data-Driven Story](#build-your-own-data-driven-story)
-* [Long-Form Narrative](#write-your-own-long-form-narrative)
-* [Podcast Episode](#produce-your-own-podcast-episode)
-* [Video News Package](#produce-your-own-video-news-package)
-* [Interactive Explainer](#build-your-own-interactive-explainer)
-* [Newsletter Edition](#curate-your-own-newsletter-edition)
-* [Photo Essay](#create-your-own-photo-essay)
+## News Reporting & Beat Coverage
 
-### News Article
+- [How to Cover a Beat: Sourcing, Enterprise Reporting, and Beat Memo Planning](https://www.poynter.org/) (Poynter Institute)
+- [How to Report and Write on Deadline: Breaking News Workflows and Inverted Pyramid Structure](https://mediahelpingmedia.org/) (Media Helping Media)
+- [The Art of the Informational and On-the-Record Interview: Pre-Interview to Verification](https://niemanstoryboard.org/) (Nieman Storyboard)
+- [The Step-by-Step Fact-Checking and Source Verification Protocol](https://firstdraftnews.org/) (First Draft News)
 
-* [How to Write a News Article: A Complete Guide](https://www.grammarly.com/blog/writing-tips/news-article) (Grammarly tutorial)  
-* [How to Write a News Story in 15 Steps](https://libguides.southernct.edu/journalism/howtowrite) (Library guide)
+## Feature Writing & In-Depth Profiling
 
-### Feature Story
+- [How to Report and Write a Profile Story: Character Arc, Sourcing, and Voice](https://archive.nytimes.com/www.nytimes.com/learning/students/writing/voices.html) (The New York Times Learning Network)
+- [The Solutions Journalism Step-by-Step Story Toolkit: Reporting Responses to Social Problems](https://learning.solutionsjournalism.org/) (Solutions Journalism Network)
+- [Crafting Human-Interest Features: From Story Pitch to Narrative Structure](https://niemanstoryboard.org/) (Nieman Storyboard)
 
-* [How to structure a feature article](https://thefreelancersyear.com/blog/feature-article-structure) (Step-by-step process)  
-* [A Step-by-Step Guide to Writing a Compelling Feature Article](https://journalism.university/journalistic-writings/step-by-step-guide-writing-feature-article) (Journalism University walkthrough)
+## Investigative & Public Affairs Reporting
 
-### Investigative Report
+- [Introduction to Investigative Journalism: Finding Sources, Public Records, and FOIA Workflows](https://gijn.org/resource/guide-introduction-to-investigative-journalism/) (Global Investigative Journalism Network & iMEdD)
+- [How to File Public Records Requests: Step-by-Step FOIA and Open Government Letter Generator](https://www.rcfp.org/open-government-guide/) (Reporters Committee for Freedom of the Press)
+- [Story-Based Inquiry: A Step-by-Step Methodological Manual for Investigative Journalists](https://unesdoc.unesco.org/) (UNESCO)
+- [Investigating Corporate Filings and Public Procurement: A Reporter's Practical Guide](https://www.ire.org/) (Investigative Reporters and Editors)
 
-* [Learn How to Write an Investigative Feature in 5 Steps](https://www.masterclass.com/articles/learn-how-to-write-an-investigative-feature-in-5-steps-with-tips-from-bob-woodward) (MasterClass with Bob Woodward)  
-* [Getting Started in Investigative Journalism](https://gijn.org/topic/getting-started-in-investigative-journalism) (GIJN guide)
+## Narrative Nonfiction & Long-Form Journalism
 
-### Profile
+- [Reporting and Writing Scenes: The Foundational Building Blocks of Narrative Journalism](https://niemanstoryboard.org/2023/04/20/narrative-journalism-reporting-writing-scenes/) (Nieman Storyboard / Lauren Kessler)
+- [Sticking a Long-Form Narrative Story Together: Structure, Throughlines, and Scene Cards](https://niemanstoryboard.org/2022/02/02/sticking-a-story-together-and-nailing-the-structure/) (Nieman Storyboard)
+- [Trauma-Informed Reporting Guide: Ethical Interviewing and Harm Reduction with Survivors](https://dartcenter.org/) (Dart Center for Journalism and Trauma)
 
-* [How to Write a Profile Feature Article](https://archive.nytimes.com/www.nytimes.com/learning/students/writing/voices.html) (NYT step-by-step)  
-* [How to write a profile story](https://shorthand.com/the-craft/how-to-write-a-profile-story/index.html) (Shorthand tips and examples)
+## Opinion, Commentary & Cultural Criticism
 
-### Opinion Piece / Editorial
+- [How to Write an Op-Ed or Column: Structure, Argumentation, and Editorial Framing](https://www.hks.harvard.edu/) (Harvard Kennedy School Communications Program)
+- [The Washington Post Guide to Writing an Opinion Article and Column](https://www.washingtonpost.com/opinions/) (The Washington Post)
+- [The Craft of Cultural Criticism: Reviewing Books, Film, and Arts for Public Audiences](https://www.poynter.org/) (Poynter Institute)
 
-* [HOW TO WRITE AN OP-ED OR COLUMN](https://www.hks.harvard.edu/sites/default/files/Academic%20Dean's%20Office/communications_program/digital_resources/js_how_to_oped_2_pgs_11_3_22.pdf) (Harvard Kennedy School guide)  
-* [The Washington Post guide to writing an opinion article](https://www.washingtonpost.com/opinions/2022/op-ed-writing-guide-washington-post-examples) (WaPo guidelines)
+## Audio & Broadcast Journalism
 
-### Data-Driven Story
+- [How to Build an Audio Story: Scripting, Voice, and Radio Production](https://training.npr.org/) (NPR Training)
+- [The Transom Guide to Audio Storytelling, Field Recording, and Sound Design](https://transom.org/) (Transom)
+- [Constructing a TV News Package: Scripting, Shooting, B-Roll, and Assembly](https://mediahelpingmedia.org/basics/constructing-a-news-package-for-tv/) (Media Helping Media)
 
-* [Step-By-Step Guide for Journalists on the Basics of Google Sheets](https://gijn.org/resource/guide-basics-google-sheets-journalists) (GIJN tutorial) — provides foundational workflow for handling and analyzing data in journalism stories  
-* [A Reporter's Guide to Excel](https://gijn.org/resource/analyzing-data-spreadsheets) (GIJN guide) — demonstrates core data processing steps used in data-driven reporting  
+## Visual Journalism & Photo Storytelling
 
-### Long-Form Narrative
+- [Creating a Community Documentary Photo Essay: Narrative Selection, Framing, and Sequencing](https://www.nytimes.com/2024/02/14/learning/creating-photo-essays-about-community-a-guide-to-our-where-we-are-contest.html) (The New York Times Learning Network)
+- [Visual Storytelling and Ethical Photojournalism Guide](https://pulitzercenter.org/) (Pulitzer Center)
+- [Planning and Producing a Multimedia Explainer: Integrating Text, Visuals, and Interactive Scrollytelling](https://www.niemanlab.org/) (Nieman Journalism Lab)
 
-* [15 best practices from award-winning reporters for producing narrative long-form journalism](https://latamjournalismreview.org/articles/15-best-practices-from-award-winning-reporters-for-producing-for-narrative-long-form-journalism) (LATAM Journalism Review) — outlines key production methods and workflows from experienced practitioners  
-* [Reporting and writing scenes: The foundational building block of stories](https://niemanstoryboard.org/2023/04/20/narrative-journalism-reporting-writing-scenes) (Nieman Storyboard) — explains scene-gathering and construction techniques essential to narrative building  
+## Data Journalism & Numerical Investigation
 
-### Podcast Episode
-
-* [How to Create a Podcast: A Step-by-Step Guide](https://journalism.university/audio-podcast/how-to-create-podcast-step-by-step) (Journalism University) — details planning, research, and production process adaptable to journalistic audio storytelling  
-* [Writing for Podcasts - Introduction to Podcasting](https://guides.library.utoronto.ca/c.php?g=721294&p=5157328) (University of Toronto guide) — covers scripting and structuring segments for narrative audio  
-
-### Video News Package
-
-* [Constructing a TV news package](https://mediahelpingmedia.org/basics/constructing-a-news-package-for-tv) (Media Helping Media) — breaks down reporting, shooting, and editing workflow for TV-style packages  
-* [JOURNALISM: HOW TO MAKE A VIDEO NEWS PACKAGE](https://www.youtube.com/watch?v=7PoaJ-TVBPE) (YouTube tutorial) — demonstrates full assembly including voiceover, interviews, and visuals  
-
-### Interactive Explainer
-
-* [Getting started with Shorthand: 3 minute tutorial for beginners](https://www.youtube.com/watch?v=mh1C-QhOBGQ) (Shorthand YouTube) — shows practical steps to build multimedia interactive stories  
-* [Journalist's Toolbox: Flourish Tutorial](https://www.youtube.com/watch?v=qD2SBLvmuWE) (YouTube tutorial) — guides creation of interactive data visualizations common in explainers  
-
-### Newsletter Edition
-
-* [How to Start Your Own Media Newsletter](https://gijn.org/stories/how-to-start-your-own-media-newsletter) (GIJN guide) — offers principles and curation strategies for journalistic newsletters  
-* [How to start a Substack](https://substack.com/get-started) (Substack official) — provides workflow for creating and publishing newsletter editions  
-
-### Photo Essay
-
-* [How to Create a Photo Essay: Step-by-Step Guide With Examples](https://www.masterclass.com/articles/how-to-create-a-photo-essay) (MasterClass) — outlines selection, sequencing, and storytelling process  
-* [Creating Photo Essays About Community: A Guide to Our Where We Are Contest](https://www.nytimes.com/2024/02/14/learning/creating-photo-essays-about-community-a-guide-to-our-where-we-are-contest.html) (NYT Learning) — pedagogical directions for structuring and depicting photo narratives
+- [A Reporter's Step-by-Step Guide to Spreadsheet Analysis: Google Sheets for Newsrooms](https://gijn.org/resource/guide-basics-google-sheets-journalists/) (Global Investigative Journalism Network)
+- [Analyzing Public Data in Spreadsheets: Cleaning, Filtering, and Finding News Leads](https://gijn.org/resource/analyzing-data-spreadsheets/) (Global Investigative Journalism Network)
+- [The Data Journalism Handbook: Step-by-Step Data Story Recipes and Investigations](https://datajournalism.com/read/handbook/one) (European Journalism Centre)
