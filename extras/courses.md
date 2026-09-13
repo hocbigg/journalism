@@ -6,45 +6,31 @@
 - [Newsroom Leadership, Product Thinking & Sustainable Media Models](#newsroom-leadership-product-thinking--sustainable-media-models)
 - [Conflict, Crisis & Environmental Reporting](#conflict-crisis--environmental-reporting)
 
----
-
 ## Investigative & Public Interest Journalism
 
-- [Global Muckraking: Investigative Journalism and Global Media (Columbia University / edX / Anya Schiffrin)](https://www.edx.org/course/global-muckraking-investigative-journalism-and-global-media)
-- [Investigative Reporting in the Digital Age (Knight Center for Journalism in the Americas / UT Austin / Brant Houston & Lise Olsen)](https://journalismcourses.org/)
-- [Journalism for Social Change (UC Berkeley / edX / Daniel Heimpel)](https://www.edx.org/)
-- [Open-Source Intelligence (OSINT) & Digital Verification Workshops (Bellingcat / GIJN)](https://www.bellingcat.com/)
-
----
+- [Global Muckraking: Investigative Journalism and Global Media (edX / Columbia University / Anya Schiffrin)](https://www.edx.org/course/global-muckraking-investigative-journalism-and-global-media)
+- [Investigative Reporting in the Digital Age (Knight Center for Journalism in the Americas / Lise Olsen, Lee Zurik, & Alejandra Xanic)](https://journalismcourses.org/courses/investigative-reporting-in-the-digital-age/)
+- [Verification: The Basics (DataJournalism.com / European Journalism Centre / Craig Silverman & Claire Wardle)](https://datajournalism.com/watch/verification-the-basics)
 
 ## Data, Computational & Visual Journalism
 
-- [Data Mindset for Editors and Newsroom Leaders (Knight Center for Journalism in the Americas / MaryJo Webster)](https://journalismcourses.org/)
-- [Generative AI for Journalists: Discovering What Data Can Do (Knight Center & Hacks/Hackers / Nicholas Diakopoulos & Aimee Rinehart)](https://journalismcourses.org/)
-- [Data Journalism and Visualization with Free Tools (Knight Center for Journalism in the Americas / Alberto Cairo)](https://journalismcourses.org/)
-- [Doing Journalism with Data: First Steps, Skills and Tools (European Journalism Centre / DataJournalism.com)](https://datajournalismcourse.net/)
-
----
+- [Doing Journalism with Data: First Steps, Skills and Tools (DataJournalism.com / European Journalism Centre / Paul Bradshaw, Steve Doig, & Alberto Cairo)](https://datajournalism.com/watch/doing-journalism-with-data-first-steps-skills-and-tools)
+- [Python for Journalists (DataJournalism.com / European Journalism Centre / Winny de Jong)](https://datajournalism.com/watch/python-for-journalists)
+- [Data Journalism and Visualization with Free Tools (Knight Center for Journalism in the Americas / Alberto Cairo & Simon Rogers)](https://journalismcourses.org/courses/data-journalism-and-visualization-with-free-tools/)
 
 ## Media Law, Ethics & Press Freedom
 
-- [International Standards on Freedom of Expression and Safety of Journalists (University of Oxford & UNESCO / edX)](https://www.edx.org/)
-- [Media Ethics & Governance (University of Amsterdam / Coursera / Mark Deuze)](https://www.coursera.org/learn/media-ethics-governance)
-- [Reuters Digital Journalism Course: Verification, Digital Safety & Independent Media (Reuters & Meta Journalism Project)](https://reutersdigitaljournalism.com/)
-- [Journalism Under Fire: Threat Modeling and Source Protection (Committee to Protect Journalists & Knight Center)](https://cpj.org/)
-
----
+- [International Standards on Freedom of Expression and Safety of Journalists (edX / University of Oxford & UNESCO / Bonavero Institute of Human Rights)](https://www.edx.org/course/international-standards-on-freedom-of-expression-and-safety-of-journalists-english)
+- [Media Ethics & Governance (Coursera / University of Amsterdam / Mark Deuze & Rutger de Graaf)](https://www.coursera.org/learn/media-ethics-governance)
+- [Reuters Digital Journalism Course (Reuters & Meta Journalism Project)](https://reutersdigitaljournalism.com/)
 
 ## Newsroom Leadership, Product Thinking & Sustainable Media Models
 
-- [Launching Nonprofit Newsrooms: Practical Strategies for Funding and Growth (Knight Center for Journalism in the Americas / Sue Cross & Brant Houston)](https://journalismcourses.org/)
-- [News Product Management: How to Adopt Product Thinking in Your Newsroom (Knight Center for Journalism in the Americas / Paty Gomes & Marco Túlio Pires)](https://journalismcourses.org/)
-- [Digital Media Strategy, Audience Engagement, and News Innovation (Tow Center for Digital Journalism / Columbia Journalism School)](https://towcenter.columbia.edu/)
-
----
+- [Product Strategies for Journalism: How to Align Editorial, Audience, Business and Technology (Knight Center for Journalism in the Americas / News Product Alliance / Adriana Lacy)](https://journalismcourses.org/courses/product-strategies-for-journalism-how-to-align-editorial-audience-business-and-technology/)
+- [Launching Nonprofit Newsrooms: Practical Strategies for Funding and Growth (Knight Center for Journalism in the Americas / Brant Houston & Sue Cross)](https://journalismcourses.org/courses/launching-nonprofit-newsrooms-practical-strategies-for-funding-and-growth/)
 
 ## Conflict, Crisis & Environmental Reporting
 
-- [Climate Journalism: Investigative Reporting for Every Beat (Knight Center & Global Investigative Journalism Network / Toby McIntosh & Diego Arguedas Ortiz)](https://journalismcourses.org/)
-- [Reporting on Disaster, Trauma, and Crisis (Dart Center for Journalism and Trauma / Columbia Journalism School)](https://dartcenter.org/)
-- [Covering Conflict, War, and Humanitarian Crises (Thomson Foundation / Journalism Now)](https://www.journalismnow.org/)
+- [Climate Journalism: Investigative Reporting for Every Beat (Knight Center for Journalism in the Americas & GIJN / Diego Arguedas Ortiz & Toby McIntosh)](https://journalismcourses.org/courses/climate-journalism-investigative-reporting-for-every-beat/)
+- [How to Cover the Climate Crisis — and Fight Disinformation (Knight Center for Journalism in the Americas / John Schwartz)](https://journalismcourses.org/courses/how-to-cover-the-climate-crisis-and-fight-disinformation/)
+- [For the Record: Covering War and Conflict (Thomson Foundation / European Broadcasting Union / Rushdi Abu Alouf & Yousra Elbagir)](https://www.thomsonfoundation.org/latest/new-course-for-the-record-covering-war-and-conflict/)

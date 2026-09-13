@@ -1,62 +1,71 @@
-# Advanced Topics
+# Advanced Topics in Journalism
 
-- [Investigative and Forensic Journalism](#investigative-and-forensic-journalism): Explores open-source intelligence (OSINT), corporate forensics, cross-border collaborative models, and high-risk operational security.
-- [Computational and Data Journalism](#computational-and-data-journalism): Focuses on algorithmic accountability, text mining of massive document leaks, reproducible statistical modeling, and geospatial investigations.
-- [Narrative Nonfiction, Audio, and Documentary Storytelling](#narrative-nonfiction-audio-and-documentary-storytelling): Examines long-form literary nonfiction, serialized investigative podcasts, documentary filmmaking, and trauma-informed interviewing.
-- [Global Journalism, Geopolitics, and Crisis Reporting](#global-journalism-geopolitics-and-crisis-reporting): Analyzes war correspondence, comparative media systems, state-backed information warfare, and transnational environmental investigations.
-- [News Innovation, Media Economics, and Platform Governance](#news-innovation-media-economics-and-platform-governance): Investigates reader-revenue business models, newsroom product management, platform distribution power, and generative AI media policy.
+These specialization tracks are designed for learners who have completed foundational training in reporting, media law, and verification, and are ready to pursue advanced methodological or subfield mastery. Learners are encouraged to select one or two tracks aligned with their investigative goals and medium of focus, rather than attempting to complete every track:
 
----
+- [Investigative and Forensic Journalism](#investigative-and-forensic-journalism): Teaches digital open-source intelligence (OSINT), forensic accounting, cross-border investigative consortia, and operational security for source protection.
+- [Computational and Data Journalism](#computational-and-data-journalism): Explores algorithmic accountability, programmatic web scraping in Python, reproducible statistical inference, and geospatial satellite investigation.
+- [Narrative Nonfiction, Audio, and Documentary Storytelling](#narrative-nonfiction-audio-and-documentary-storytelling): Examines structural narrative arcs in literary nonfiction, serialized investigative audio design, long-form documentary direction, and trauma-informed interviewing.
+- [Global Journalism, Geopolitics, and Crisis Reporting](#global-journalism-geopolitics-and-crisis-reporting): Focuses on hostile-environment conflict reporting, comparative global media systems, investigating state disinformation campaigns, and environmental enterprise reporting.
+- [News Innovation, Media Economics, and Platform Governance](#news-innovation-media-economics-and-platform-governance): Analyzes commercial media economics, newsroom product management, tech platform distribution power, and generative AI newsroom governance.
 
 ## Investigative and Forensic Journalism
 
-| Topic | Why Study | Resources |
-| --- | --- | --- |
-| **Open-Source Intelligence (OSINT) and Digital Forensics** | Investigates methodologies for gathering, verifying, and preserving online digital evidence, satellite imagery, and metadata to expose human rights violations and state violence. | [Berkeley Protocol on Digital Open Source Investigations](https://www.ohchr.org/) (UN OHCHR & UC Berkeley Human Rights Center)<br>- *We Are Bellingcat: Global Crime, Online Sleuths, and the Bold Future of News* by Eliot Higgins<br>- [Bellingcat's Online Investigation Toolkit](https://www.bellingcat.com/) |
-| **Financial Forensics, Corporate Intelligence, and Illicit Flows** | Teaches techniques for untangling complex corporate registries, tracking offshore tax havens, identifying beneficial ownership, and exposing public procurement fraud. | *Follow the Money: A Guide to Financial Investigations* by Raj Bairoliya (Investigative Reporters and Editors)<br>- *The Panama Papers: Breaking the Story of How the Rich and Powerful Hide Their Money* by Bastian Obermayer and Frederik Obermaier |
-| **Cross-Border Consortium Investigations and Collaborative Methods** | Analyzes the organizational frameworks, cryptographic platforms, and data-sharing workflows required to coordinate multinational investigative consortia across dozens of newsrooms. | *Investigative Journalism: Global Perspectives* by Hugo de Burgh and Paul Lashmar (Routledge)<br>- [International Consortium of Investigative Journalists (ICIJ) Methods & Case Studies](https://www.icij.org/) |
-| **Whistleblower Protection, Cryptographic Security, and Source OpSec** | Establishes operational security (OpSec) protocols, secure drop infrastructure, legal shield protections, and risk-mitigation strategies for handling high-risk sources and classified leaks. | *Surveillance Valley: The Secret Military History of the Internet* by Yasha Levine<br>- [Freedom of the Press Foundation: Digital Security and Source Protection Guides](https://freedom.press/) |
+This track covers advanced investigative methodologies for exposing transnational crime, corporate malfeasance, state abuse, and institutional corruption.
 
----
+Open-Source Intelligence (OSINT) and Digital Forensics: [Berkeley Protocol on Digital Open Source Investigations (UN OHCHR & UC Berkeley Human Rights Center)](https://www.ohchr.org/sites/default/files/2024-01/OHCHR_BerkeleyProtocol.pdf) - Establishes international legal and technical standards for identifying, collecting, verifying, and preserving digital open-source information, social media evidence, and satellite imagery for investigative accountability.
+
+Financial Forensics and Corporate Investigations: [The Investigative Journalist's Guide to Company Accounts (Raj Bairoliya / Centre for Investigative Journalism)](https://tcij.org/handbooks/the-investigative-journalists-guide-to-company-accounts/) - A practical open handbook teaching reporters how to read corporate balance sheets, audit profit-and-loss statements, trace shell companies, and detect accounting maneuvers used to conceal fraud.
+
+Cross-Border Collaborative Investigations: [Cross-Border Collaborative Journalism: A Step-by-Step Guide (Brigitte Alfter / Routledge)](https://books.google.com/books?isbn=9781138613638) - The foundational methodology manual on organizing transnational reporting consortia, managing secure shared data repositories, navigating cross-cultural editorial workflows, and synchronizing cross-border publications.
+
+Whistleblower Protection, Encryption, and Source OpSec: [Information Security for Journalists (Silkie Carlo & Arjen Kamphuis / Centre for Investigative Journalism)](https://tcij.org/handbooks/infosec/) - A comprehensive practitioner guide to threat modeling, hardware security, Tails OS, disk encryption, and secure communications protocols required to protect high-risk sources and whistleblowers.
 
 ## Computational and Data Journalism
 
-| Topic | Why Study | Resources |
-| --- | --- | --- |
-| **Algorithmic Accountability and AI Auditing** | Explores methodologies for reverse-engineering algorithmic bias, automated decision-making systems in public governance, scoring algorithms, and commercial artificial intelligence models. | *Automating the News: How Algorithms Are Rewriting the Media* by Nicholas Diakopoulos (Harvard University Press)<br>- [Algorithmic Accountability Reporting Guide](https://www.cjr.org/) (Columbia Journalism Review / Nicholas Diakopoulos) |
-| **Computational Text Mining and Natural Language Processing** | Equips reporters to programmaticly parse, cluster, and sentiment-analyze millions of unstructured leaked documents, emails, and PDFs using Python and open-source NLP pipelines. | *Text Analysis with R for Students of Literature and the Humanities* by Matthew L. Jockers and Rosamond Thalken (Springer)<br>- *Finding Stories in Spreadsheets* by Paul Bradshaw (Leanpub) |
-| **Statistical Inference and Reproducible Data Analysis** | Teaches regression analysis, hypothesis testing, margin-of-error validation, and reproducible computational notebooks (R/Python) to prevent false correlations in enterprise reporting. | *Precision Journalism: A Reporter's Introduction to Social Science Methods* by Philip Meyer (Rowman & Littlefield)<br>- *The Chicago Guide to Writing about Numbers* by Jane E. Miller (University of Chicago Press) |
-| **Geospatial Data, Satellite Telemetry, and Network Analysis** | Uses Geographic Information Systems (GIS), satellite remote sensing, and graph databases to map environmental destruction, supply chain routes, and clandestine networks. | *The Functional Art: An Introduction to Information Graphics and Visualization* by Alberto Cairo (New Riders)<br>- [Global Investigative Journalism Network (GIJN) Guide to Satellite Imagery and Geospatial Analysis](https://gijn.org/) |
+This track focuses on advanced computational techniques, programming environments, and statistical rigor for uncovering stories within complex codebases and massive datasets.
 
----
+Algorithmic Accountability and AI Auditing: [Automating the News: How Algorithms Are Rewriting the Media (Nicholas Diakopoulos / Harvard University Press)](https://books.google.com/books?isbn=9780674976986) - The definitive academic text exploring how to investigate algorithmic decision-making, scoring systems, automated news processes, and computational accountability in public life.
+
+Algorithmic Accountability and AI Auditing: [Algorithmic Accountability Reporting: On the Investigation of Black Boxes (Nicholas Diakopoulos / Tow Center for Digital Journalism)](https://academiccommons.columbia.edu/doi/10.7916/D8ZK5TW2) - A companion open-access research guide detailing reverse-engineering methods, input-output auditing frameworks, and investigative approaches for interrogating opaque proprietary algorithms.
+
+Programmatic Data Extraction and Web Scraping: [Python for Journalists (Winny de Jong / DataJournalism.com)](https://datajournalism.com/watch/python-for-journalists) - A structured, free video course that walks reporters through using Jupyter Notebooks, writing automated Python scrapers, and cleaning unstructured text datasets using Pandas.
+
+Statistical Inference and Precision Journalism: [The Chicago Guide to Writing about Numbers (Jane E. Miller / University of Chicago Press)](https://books.google.com/books?isbn=9780226185774) - An authoritative guide to interpreting distributions, regression models, percentage changes, and confidence intervals to ensure quantitative assertions are analytically sound and clearly written.
+
+Geospatial Investigation and Remote Sensing: [Resources for Finding and Using Satellite Images (Global Investigative Journalism Network)](https://gijn.org/resources-for-finding-and-using-satellite-images/) - A comprehensive practitioner guide and tool inventory detailing how to access optical and radar satellite imagery, utilize Google Earth Engine, and apply remote sensing to environmental and human rights investigations.
 
 ## Narrative Nonfiction, Audio, and Documentary Storytelling
 
-| Topic | Why Study | Resources |
-| --- | --- | --- |
-| **Literary Journalism and Narrative Nonfiction Architecture** | Examines advanced scene reconstruction, character development, dramatic arc, narrative pacing, and non-fiction stylistic techniques for long-form magazine features and books. | *Telling True Stories: A Nonfiction Writers' Guide from the Nieman Foundation at Harvard University* by Mark Kramer and Wendy Call (Penguin)<br>- *The Art and Craft of Feature Writing* by William E. Blundell (Wall Street Journal / Plume) |
-| **Long-Form Serial Audio and Sound Design** | Dissects multi-episode investigative podcast architecture, binaural sound gathering, narrative scoring, archival audio integration, and sonic character development. | *Reality Radio: Telling True Stories in Sound* by John Biewen and Alexa Dilworth (University of North Carolina Press)<br>- *Out on the Wire: The Storytelling Secrets of the New Masters of Radio* by Jessica Abel (Broadway Books) |
-| **Investigative Documentary Film and Visual Storytelling** | Covers long-form visual dramaturgy, cinema verite filming methodologies, ethical considerations in visual representation, archival clearance, and long-arc editing. | *Directing the Documentary* by Michael Rabiger and Courtney Hermann (Routledge)<br>- *Visual Storytelling: Inspiring a New Visual Language* by Robert Klanten (Gestalten) |
-| **Trauma-Informed Interviewing and Ethical Immersion** | Focuses on psychological harm reduction, trauma-informed interview protocols, and ethical considerations when reporting on survivors of violence, abuse, and systemic trauma. | [Dart Center for Journalism and Trauma: Resources & Style Guide](https://dartcenter.org/) (Columbia Journalism School)<br>- *The Science of Storytelling: Why Stories Make Us Human and How to Tell Them Better* by Will Storr (William Collins) |
+This track examines long-form narrative craft across prose, serialized audio, and documentary film, emphasizing character development, dramatic structure, and ethical immersion.
 
----
+Literary Journalism and Narrative Architecture: [Telling True Stories: A Nonfiction Writers' Guide from the Nieman Foundation at Harvard University (Mark Kramer & Wendy Call, eds. / Plume)](https://books.google.com/books?isbn=9780452287556) - The benchmark anthology of craft essays by leading narrative journalists, breaking down field reporting immersion, scene reconstruction, voice, pacing, and narrative ethics.
+
+Long-Form Serial Audio and Sound Design: [Reality Radio: Telling True Stories in Sound (John Biewen & Alexa Dilworth, eds. / University of North Carolina Press)](https://books.google.com/books?isbn=9781469614403) - An essential exploration of the documentary audio craft, analyzing acoustic scene-building, multi-track narrative scoring, archival integration, and voice-track writing for serial podcasts.
+
+Investigative Documentary Filmmaking: [Directing the Documentary (Michael Rabiger & Courtney Hermann / Routledge)](https://books.google.com/books?isbn=9780367235574) - The canonical master text on long-form visual dramaturgy, cinéma vérité ethics, interviewing techniques for camera, archival clearances, and structural post-production editing.
+
+Trauma-Informed Interviewing and Sensitive Reporting: [Dart Center Style Guide for Trauma-Informed Journalism (Dart Center for Journalism and Trauma / Columbia Journalism School)](https://dartcenter.org/resources/dart-center-style-guide) - A peer-reviewed open reference guide outlining ethical protocols for interviewing survivors of violence, minimizing re-traumatization, and accurately reporting on psychological trauma.
 
 ## Global Journalism, Geopolitics, and Crisis Reporting
 
-| Topic | Why Study | Resources |
-| --- | --- | --- |
-| **War Correspondence, Frontline Safety, and Crisis Reporting** | Prepares journalists for high-risk conflict zones with hostile environment training concepts, battlefield ethics, extraction planning, and psychological resilience. | *The Media of Conflict: War Reporting and Its Cultural Consequences* by Piers Robinson (Routledge)<br>- [ACOS Alliance: Freelance Journalist Safety Principles](https://www.acosalliance.org/) |
-| **Comparative Media Systems and Press Freedom** | Examines how political systems, regulatory models, state ownership, clientelism, and legal frameworks affect press freedom and media independence globally. | *Comparing Media Systems: Three Models of Media and Politics* by Daniel C. Hallin and Paolo Mancini (Cambridge University Press)<br>- *Comparing Media Systems Beyond the Western World* by Daniel C. Hallin and Paolo Mancini (Cambridge University Press) |
-| **State-Sponsored Disinformation and Information Warfare** | Investigates coordinated inauthentic behavior, botnet infrastructure, state-backed influence campaigns, and computational propaganda aimed at destabilizing democratic processes. | *Information Wars: How We Lost the Global Battle Against Disinformation and What We Can Do About It* by Richard Stengel (Atlantic Monthly Press)<br>- [Stanford Internet Observatory: Research on Computational Propaganda](https://cyber.fsi.stanford.edu/io) |
-| **Transnational Environmental and Extractive Industry Reporting** | Explores cross-border investigations into illegal mining, international timber trafficking, carbon-offset fraud, and corporate environmental culpability. | *Covering the Environment: How Journalists Work the Green Beat* by Bob Wyss (Routledge)<br>- [Earth Journalism Network (EJN) Investigative Toolkits & Guides](https://earthjournalism.net/) |
+This track prepares reporters to navigate complex international media ecosystems, armed conflicts, coordinated influence operations, and cross-border environmental crises.
 
----
+War Correspondence and Conflict Zone Reporting: [Safety Guide for Journalists: A Handbook for Reporters in High-Risk Environments (Reporters Without Borders & UNESCO)](https://unesdoc.unesco.org/ark:/48223/pf0000243986) - A comprehensive operational field manual covering pre-assignment risk assessments, hostile environment security, battlefield medical preparedness, digital security in conflict zones, and psychological self-care.
+
+Comparative Media Systems and Press Freedom: [Comparing Media Systems: Three Models of Media and Politics (Daniel C. Hallin & Paolo Mancini / Cambridge University Press)](https://books.google.com/books?isbn=9780521543088) - The foundational comparative framework analyzing the relationships between political systems, media market structures, journalistic professionalism, and state intervention across democracies.
+
+State-Sponsored Disinformation and Information Warfare: [Verification Handbook for Disinformation and Media Manipulation (Craig Silverman, ed. / European Journalism Centre)](https://datajournalism.com/read/handbook/verification-3) - A free, open-access field guide detailing practical forensic methodologies for tracking coordinated inauthentic behavior, botnet networks, state-backed influence operations, and manipulated synthetic media.
+
+Transnational Environmental and Climate Investigation: [Covering the Environment: How Journalists Work the Green Beat (Bob Wyss / Routledge)](https://books.google.com/books?isbn=9781138284418) - A comprehensive guide detailing how to investigate environmental regulatory agencies, interpret climate and atmospheric data, untangle resource extraction supply chains, and expose environmental pollution.
 
 ## News Innovation, Media Economics, and Platform Governance
 
-| Topic | Why Study | Resources |
-| --- | --- | --- |
-| **Media Economics, Paywalls, and Sustainable Revenue Models** | Analyzes the collapse of digital ad markets, subscriber acquisition funnels, dynamic paywall architectures, micro-donations, and non-profit newsroom funding models. | *The Economics of Media Markets* by Robert G. Picard (Routledge)<br>- *The Business of News: A Handbook for Journalism Entrepreneurs* by Kevin Davis (Tow Center for Digital Journalism) |
-| **Newsroom Product Management and Audience Engagement Systems** | Bridges the gap between journalism, software engineering, UX design, and data analytics to build audience-centric news products while maintaining editorial mission. | *Product Management for Journalism* by Tow Center for Digital Journalism (Columbia Journalism School)<br>- [Nieman Journalism Lab Research & Analysis](https://www.niemanlab.org/) |
-| **Platform Power, Algorithmic Distribution, and Media Policy** | Analyzes how major technology platforms act as gatekeepers of information, control algorithmic visibility, extract value from publishers, and interact with global antitrust laws. | *The Platform Society: Public Values in a Connective World* by José van Dijck, Thomas Poell, and Martijn de Waal (Oxford University Press)<br>- *Platform Capitalism* by Nick Srnicek (Polity Press) |
-| **Generative AI, Synthetic Media Ethics, and Legal Regimes** | Examines copyright disputes over LLM training data, synthetic media detection, automated story drafting, and legal/ethical policies for AI integration in news organizations. | *Generative AI in the Newsroom: Ethical, Legal, and Practical Guidelines* (Partnership on AI / Tow Center)<br>- [Reuters Institute for the Study of Journalism: Digital News Reports](https://reutersinstitute.politics.ox.ac.uk/) |
+This track examines the structural, commercial, and technological forces reshaping the news industry, from subscription economics to platform gatekeeping and artificial intelligence.
+
+Media Economics, Reader Revenue, and Sustainable Business Models: [The Economics and Financing of Media Companies (Robert G. Picard / Fordham University Press)](https://books.google.com/books?isbn=9780823232574) - The standard economic analysis of media firm capital structures, multi-sided markets, advertising elasticity, audience valuation, and emerging reader-revenue architectures.
+
+Newsroom Product Management and Audience Development: [Product Strategies for Journalism: How to Align Editorial, Audience, Business and Technology (Adriana Lacy / Knight Center for Journalism in the Americas)](https://journalismcourses.org/courses/product-strategies-for-journalism-how-to-align-editorial-audience-business-and-technology/) - A free, four-module professional course created with the News Product Alliance that teaches agile workflows, audience conversion funnels, product thinking, and cross-functional newsroom collaboration.
+
+Platform Power, Algorithmic Intermediation, and Media Policy: [The Platform Society: Public Values in a Connective World (José van Dijck, Thomas Poell, & Martijn de Waal / Oxford University Press)](https://books.google.com/books?isbn=9780190889777) - The seminal scholarly text dissecting platformization, algorithmic curation, infrastructural dependence, and regulatory struggles between Big Tech and news organizations.
+
+Generative AI, Newsroom Integration, and Synthetic Media Ethics: [Generating Change: A Global Survey of What News Organisations Are Doing with AI (Charlie Beckett & Mira Yaseen / Polis, London School of Economics)](https://www.journalismai.info/research/2023-generating-change) - An exhaustive global research report analyzing data from 105 newsrooms across 46 countries, outlining practical applications, workflow shifts, algorithmic risks, and editorial governance models for AI in journalism.
