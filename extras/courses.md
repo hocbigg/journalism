@@ -1,10 +1,10 @@
 # Journalism – Great Courses
 
-- [Investigative & Public Interest Journalism](#investigative--public-interest-journalism)
-- [Data, Computational & Visual Journalism](#data-computational--visual-journalism)
-- [Media Law, Ethics & Press Freedom](#media-law-ethics--press-freedom)
-- [Newsroom Leadership, Product Thinking & Sustainable Media Models](#newsroom-leadership-product-thinking--sustainable-media-models)
-- [Conflict, Crisis & Environmental Reporting](#conflict-crisis--environmental-reporting)
+- [Investigative & Public Interest Journalism](#investigative-public-interest-journalism)
+- [Data, Computational & Visual Journalism](#data-computational-visual-journalism)
+- [Media Law, Ethics & Press Freedom](#media-law-ethics-press-freedom)
+- [Newsroom Leadership, Product Thinking & Sustainable Media Models](#newsroom-leadership-product-thinking-sustainable-media-models)
+- [Conflict, Crisis & Environmental Reporting](#conflict-crisis-environmental-reporting)
 
 ## Investigative & Public Interest Journalism
 

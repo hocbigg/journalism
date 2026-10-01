@@ -5,9 +5,26 @@ description: 🎓 Path to a free self-taught education in Journalism!
 
 ## Introduction
 
-This roadmap provides a structured, self-paced curriculum equivalent to a 4-year undergraduate degree in Journalism.
+Journalism is an empirical discipline of verification, inquiry, and public accountability. At its foundation, it is not merely the act of writing or broadcasting information, but a structured process of establishing verifiable facts, interrogating institutional power, and contextualizing current events for a self-governing public. Studying journalism equips learners with rigorous questioning techniques, evidentiary standards, and narrative precision—skills essential whether your goal is to report for a newsroom, run an independent publication, or critically navigate the contemporary information ecosystem.
 
-## Communities
+This curriculum establishes the foundational core of an undergraduate journalism education. It is built for self-directed learners and requires no prior newsroom experience, media studies background, or institutional affiliation. Every subject included represents knowledge and practical craft that virtually every reporter, editor, and media practitioner must master before specializing.
+
+Because journalism is an applied practice, this curriculum balances foundational conceptual texts with practical field guides and open courseware. It intentionally omits hyper-specialized subfields and academic communications research methods to keep your study focused on core newsgathering, writing, and editorial standards.
+
+While individual subjects can be consulted independently, they are organized into a logical learning path from fundamental craft to complex reporting formats:
+
+- **Foundational Craft and Reporting Routines:** Begin with *Foundations and History of Journalism* to understand news values, press theories, and the democratic role of the Fourth Estate. Move immediately into *News Writing and Reporting*, *Interviewing, Observation, and Sourcing*, and *Copy Editing and News Style*. These subjects establish the primary mechanics of reporting: finding human sources, conducting interviews, structuring a hard-news story using the inverted pyramid, and editing copy for clarity, syntax, and accuracy.
+- **Evidentiary and Legal Guardrails:** Before reporting enterprise stories, work through *Verification and Fact-Checking*, *Media Law and Freedom of Expression*, and *Media Ethics and Professional Standards*. These subjects teach you how to authenticate user-generated content, navigate legal boundaries regarding defamation, privacy, and open records, and apply structured ethical decision-making to harm minimization and conflicts of interest.
+- **In-Depth Investigation and Multiplatform Reporting:** Once the basic craft and legal standards are established, proceed to *Investigative Reporting and Public Records*, *Digital Storytelling and Social Media Reporting*, *Multimedia Journalism (Audio and Visual Storytelling)*, and *Data Journalism and Numeracy*. These subjects expand your toolkit into hypothesis-driven investigation, Freedom of Information Act (FOIA) requests, spreadsheet numeracy, and audio-visual packaging.
+
+Mastering these foundational subjects prepares you to produce accurate, legally sound, and compelling news reporting. Once you have completed this core, you can branch out into practical and specialized extensions:
+
+- Explore specialized subfields—such as corporate financial forensics, cross-border collaborative reporting, or algorithmic accountability—in [Advanced Topics](advanced_topics.md).
+- Put these concepts into practice using structured reporting workflows, beat memos, and public records request templates in [Projects](projects.md).
+- Deepen your historical, sociological, and narrative perspective through landmark muckraking classics, press theory essays, and narrative nonfiction in [Readings](extras/readings.md).
+- Supplement your reading with structured lecture series and video workshops led by investigative reporters and editors in [Courses](extras/courses.md).
+
+### Communities
 
 - Forums:
     - [Journalism.co.uk Forums](https://www.journalism.co.uk/forums/)

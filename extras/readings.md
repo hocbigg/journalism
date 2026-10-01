@@ -1,10 +1,10 @@
 # Journalism – Great Readings
 
-- [Democratic Theory, Philosophy of the Press & Epistemology](#democratic-theory-philosophy-of-the-press--epistemology)
-- [Political Economy, Media Sociology & Institutional Critique](#political-economy-media-sociology--institutional-critique)
-- [Landmark Muckraking, Investigative & Watchdog Masterworks](#landmark-muckraking-investigative--watchdog-masterworks)
-- [Literary Journalism, Feature Writing & Narrative Nonfiction](#literary-journalism-feature-writing--narrative-nonfiction)
-- [Platform Power, Computational Media & Contemporary Ecology](#platform-power-computational-media--contemporary-ecology)
+- [Democratic Theory, Philosophy of the Press & Epistemology](#democratic-theory-philosophy-of-the-press-epistemology)
+- [Political Economy, Media Sociology & Institutional Critique](#political-economy-media-sociology-institutional-critique)
+- [Landmark Muckraking, Investigative & Watchdog Masterworks](#landmark-muckraking-investigative-watchdog-masterworks)
+- [Literary Journalism, Feature Writing & Narrative Nonfiction](#literary-journalism-feature-writing-narrative-nonfiction)
+- [Platform Power, Computational Media & Contemporary Ecology](#platform-power-computational-media-contemporary-ecology)
 
 ## Democratic Theory, Philosophy of the Press & Epistemology
 
