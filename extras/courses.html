@@ -1,79 +1,360 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light dark">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
 
-<title>Journalism – Great Courses</title>
-<link rel="stylesheet" href="/journalism/style.css">
-<meta name="description" content="">
+  <title>Journalism – Great Courses</title>
+  <meta name="description" content="Journalism – Great Courses curriculum by hocbigg.">
+  <meta name="author" content="hocbigg">
 
-<link rel="canonical" href="https://hocbigg.github.io/journalism/">
+  <link rel="canonical" href="https://hocbigg.github.io/journalism/extras/courses.html">
+  <meta property="og:title" content="Journalism – Great Courses">
+  <meta property="og:description" content="Journalism – Great Courses curriculum by hocbigg.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hocbigg.github.io/journalism/extras/courses.html">
+  <link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
 
-<meta property="og:title" content="Journalism – Great Courses">
-<meta property="og:description" content="">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://hocbigg.github.io/journalism/">
-<meta name="author" content="hocbigg">
-<link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
+  <style>
+:root {
+  color-scheme: light dark;
+
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #595959;
+  --border: #e0e0e0;
+  --th-bg: #f6f8fa;
+  --code-bg: #f4f4f4;
+  --link: #0969da;
+  --focus-ring: #0969da;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #8b949e;
+    --border: #30363d;
+    --th-bg: #161b22;
+    --code-bg: #161b22;
+    --link: #58a6ff;
+    --focus-ring: #58a6ff;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1.5rem auto;
+  max-width: 60rem;
+  padding: 0 1rem 3.5rem;
+  background-color: var(--bg);
+  color: var(--fg);
+  font: 1.15rem/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Cú pháp hiện đại thay thế cho word-wrap */
+  overflow-wrap: break-word;
+}
+
+.site-header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem 1.25rem;
+  font-size: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+nav a:hover, 
+nav a:focus-visible {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+nav .nav-brand {
+  color: var(--fg);
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.skip-link {
+  position: absolute;
+  transform: translateY(-150%);
+  left: 1rem;
+  background: var(--fg);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(1rem);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--fg);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+p, ul, ol, blockquote, table {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+li > ul,
+li > ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:has(img) {
+  text-decoration: none;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.page-header .page-subtitle {
+  color: var(--muted);
+  font-size: 1.15rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header img {
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  tab-size: 2;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 0;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.75rem;
+  vertical-align: top;
+}
+
+th {
+  background-color: var(--th-bg);
+  font-weight: 600;
+}
+
+blockquote {
+  margin-inline: 0;
+  border-left: 4px solid var(--border);
+  padding-left: 1rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  body {
+    max-width: none;
+    color: #000;
+    background: #fff;
+  }
+  .skip-link, nav {
+    display: none;
+  }
+}
+  </style>
 </head>
-
 <body>
 
-<nav>
-<a href="/">Hocbigg</a>
-<a href="/journalism/">Journalism</a>
-<a href="/journalism/advanced_topics.html">Advanced Topics</a>
-<a href="/journalism/projects.html">Projects</a>
-<a href="/journalism/extras/courses.html">Extra Courses</a>
-<a href="/journalism/extras/readings.html">Extra Reading</a>
-<a href="https://github.com/hocbigg/journalism/" target="_blank">View on Github</a>
-</nav>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<main>
-<article>
+  <header class="site-header">
+    <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="https://hocbigg.github.io/" class="nav-brand">Hocbigg</a></li>
+      <li><a href="/journalism/">Journalism</a></li>
+      <li><a href="/journalism/advanced_topics.html">Advanced Topics</a></li>
+      <li><a href="/journalism/projects.html">Projects</a></li>
+      <li><a href="/journalism/extras/readings.html">Extra Readings</a></li>
+      <li><a href="/journalism/extras/courses.html">Extra Courses</a></li>
+      <li><a href="https://github.com/hocbigg/journalism" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <article>
 
 <h1 id="journalism-great-courses">Journalism – Great Courses</h1>
-<p>This is a list of high-quality courses that, for one reason or another, didn't make it into the curriculum.</p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Courses</th>
-<th style="text-align: center;">Duration</th>
-<th style="text-align: center;">Effort</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://nbcuacademy.com/course/fundamentals-of-journalism/">Fundamentals of Journalism</a></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">7 hours</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://www.coursera.org/learn/english-for-journalism">English for Journalism</a></td>
-<td style="text-align: center;">5 weeks</td>
-<td style="text-align: center;">3-5 hours/week</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://www.coursera.org/learn/gathering-news">Gathering and Developing the News</a></td>
-<td style="text-align: center;">4 weeks</td>
-<td style="text-align: center;">4-6 hours/week</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://journalismcourses.org/course/launching-nonprofit-newsrooms-practical-strategies-for-funding-and-growth/">Launching Nonprofit Newsrooms: Practical Strategies for Funding and Growth</a></td>
-<td style="text-align: center;">4 weeks</td>
-<td style="text-align: center;">-</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://journalismcourses.org/course/climate-journalism-and-cop30-from-science-to-local-solutions-and-fighting-disinformation/">Climate Journalism and COP30: From Science to Local Solutions and Fighting Disinformation</a></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-</tr>
-</tbody>
-</table>
-</article>
-</main>
+<ul>
+<li><a href="#investigative-public-interest-journalism">Investigative &amp; Public Interest Journalism</a></li>
+<li><a href="#data-computational-visual-journalism">Data, Computational &amp; Visual Journalism</a></li>
+<li><a href="#media-law-ethics-press-freedom">Media Law, Ethics &amp; Press Freedom</a></li>
+<li><a href="#newsroom-leadership-product-thinking-sustainable-media-models">Newsroom Leadership, Product Thinking &amp; Sustainable Media Models</a></li>
+<li><a href="#conflict-crisis-environmental-reporting">Conflict, Crisis &amp; Environmental Reporting</a></li>
+</ul>
+<h2 id="investigative-public-interest-journalism">Investigative &amp; Public Interest Journalism</h2>
+<ul>
+<li><a href="https://www.edx.org/course/global-muckraking-investigative-journalism-and-global-media" target="_blank" rel="noopener noreferrer">Global Muckraking: Investigative Journalism and Global Media (edX / Columbia University / Anya Schiffrin)</a></li>
+<li><a href="https://journalismcourses.org/courses/investigative-reporting-in-the-digital-age/" target="_blank" rel="noopener noreferrer">Investigative Reporting in the Digital Age (Knight Center for Journalism in the Americas / Lise Olsen, Lee Zurik, &amp; Alejandra Xanic)</a></li>
+<li><a href="https://datajournalism.com/watch/verification-the-basics" target="_blank" rel="noopener noreferrer">Verification: The Basics (DataJournalism.com / European Journalism Centre / Craig Silverman &amp; Claire Wardle)</a></li>
+</ul>
+<h2 id="data-computational-visual-journalism">Data, Computational &amp; Visual Journalism</h2>
+<ul>
+<li><a href="https://datajournalism.com/watch/doing-journalism-with-data-first-steps-skills-and-tools" target="_blank" rel="noopener noreferrer">Doing Journalism with Data: First Steps, Skills and Tools (DataJournalism.com / European Journalism Centre / Paul Bradshaw, Steve Doig, &amp; Alberto Cairo)</a></li>
+<li><a href="https://datajournalism.com/watch/python-for-journalists" target="_blank" rel="noopener noreferrer">Python for Journalists (DataJournalism.com / European Journalism Centre / Winny de Jong)</a></li>
+<li><a href="https://journalismcourses.org/courses/data-journalism-and-visualization-with-free-tools/" target="_blank" rel="noopener noreferrer">Data Journalism and Visualization with Free Tools (Knight Center for Journalism in the Americas / Alberto Cairo &amp; Simon Rogers)</a></li>
+</ul>
+<h2 id="media-law-ethics-press-freedom">Media Law, Ethics &amp; Press Freedom</h2>
+<ul>
+<li><a href="https://www.edx.org/course/international-standards-on-freedom-of-expression-and-safety-of-journalists-english" target="_blank" rel="noopener noreferrer">International Standards on Freedom of Expression and Safety of Journalists (edX / University of Oxford &amp; UNESCO / Bonavero Institute of Human Rights)</a></li>
+<li><a href="https://www.coursera.org/learn/media-ethics-governance" target="_blank" rel="noopener noreferrer">Media Ethics &amp; Governance (Coursera / University of Amsterdam / Mark Deuze &amp; Rutger de Graaf)</a></li>
+<li><a href="https://reutersdigitaljournalism.com/" target="_blank" rel="noopener noreferrer">Reuters Digital Journalism Course (Reuters &amp; Meta Journalism Project)</a></li>
+</ul>
+<h2 id="newsroom-leadership-product-thinking-sustainable-media-models">Newsroom Leadership, Product Thinking &amp; Sustainable Media Models</h2>
+<ul>
+<li><a href="https://journalismcourses.org/courses/product-strategies-for-journalism-how-to-align-editorial-audience-business-and-technology/" target="_blank" rel="noopener noreferrer">Product Strategies for Journalism: How to Align Editorial, Audience, Business and Technology (Knight Center for Journalism in the Americas / News Product Alliance / Adriana Lacy)</a></li>
+<li><a href="https://journalismcourses.org/courses/launching-nonprofit-newsrooms-practical-strategies-for-funding-and-growth/" target="_blank" rel="noopener noreferrer">Launching Nonprofit Newsrooms: Practical Strategies for Funding and Growth (Knight Center for Journalism in the Americas / Brant Houston &amp; Sue Cross)</a></li>
+</ul>
+<h2 id="conflict-crisis-environmental-reporting">Conflict, Crisis &amp; Environmental Reporting</h2>
+<ul>
+<li><a href="https://journalismcourses.org/courses/climate-journalism-investigative-reporting-for-every-beat/" target="_blank" rel="noopener noreferrer">Climate Journalism: Investigative Reporting for Every Beat (Knight Center for Journalism in the Americas &amp; GIJN / Diego Arguedas Ortiz &amp; Toby McIntosh)</a></li>
+<li><a href="https://journalismcourses.org/courses/how-to-cover-the-climate-crisis-and-fight-disinformation/" target="_blank" rel="noopener noreferrer">How to Cover the Climate Crisis — and Fight Disinformation (Knight Center for Journalism in the Americas / John Schwartz)</a></li>
+<li><a href="https://www.thomsonfoundation.org/latest/new-course-for-the-record-covering-war-and-conflict/" target="_blank" rel="noopener noreferrer">For the Record: Covering War and Conflict (Thomson Foundation / European Broadcasting Union / Rushdi Abu Alouf &amp; Yousra Elbagir)</a></li>
+</ul>
+    </article>
+  </main>
 
 </body>
 </html>

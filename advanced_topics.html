@@ -1,172 +1,363 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light dark">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
 
-<title>Advanced Topics</title>
-<link rel="stylesheet" href="/journalism/style.css">
-<meta name="description" content="">
+  <title>Advanced Topics in Journalism</title>
+  <meta name="description" content="Advanced Topics in Journalism curriculum by hocbigg.">
+  <meta name="author" content="hocbigg">
 
-<link rel="canonical" href="https://hocbigg.github.io/journalism/">
+  <link rel="canonical" href="https://hocbigg.github.io/journalism/advanced_topics.html">
+  <meta property="og:title" content="Advanced Topics in Journalism">
+  <meta property="og:description" content="Advanced Topics in Journalism curriculum by hocbigg.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hocbigg.github.io/journalism/advanced_topics.html">
+  <link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
 
-<meta property="og:title" content="Advanced Topics">
-<meta property="og:description" content="">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://hocbigg.github.io/journalism/">
-<meta name="author" content="hocbigg">
-<link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
+  <style>
+:root {
+  color-scheme: light dark;
+
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #595959;
+  --border: #e0e0e0;
+  --th-bg: #f6f8fa;
+  --code-bg: #f4f4f4;
+  --link: #0969da;
+  --focus-ring: #0969da;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #8b949e;
+    --border: #30363d;
+    --th-bg: #161b22;
+    --code-bg: #161b22;
+    --link: #58a6ff;
+    --focus-ring: #58a6ff;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1.5rem auto;
+  max-width: 60rem;
+  padding: 0 1rem 3.5rem;
+  background-color: var(--bg);
+  color: var(--fg);
+  font: 1.15rem/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Cú pháp hiện đại thay thế cho word-wrap */
+  overflow-wrap: break-word;
+}
+
+.site-header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem 1.25rem;
+  font-size: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+nav a:hover, 
+nav a:focus-visible {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+nav .nav-brand {
+  color: var(--fg);
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.skip-link {
+  position: absolute;
+  transform: translateY(-150%);
+  left: 1rem;
+  background: var(--fg);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(1rem);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--fg);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+p, ul, ol, blockquote, table {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+li > ul,
+li > ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:has(img) {
+  text-decoration: none;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.page-header .page-subtitle {
+  color: var(--muted);
+  font-size: 1.15rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header img {
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  tab-size: 2;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 0;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.75rem;
+  vertical-align: top;
+}
+
+th {
+  background-color: var(--th-bg);
+  font-weight: 600;
+}
+
+blockquote {
+  margin-inline: 0;
+  border-left: 4px solid var(--border);
+  padding-left: 1rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  body {
+    max-width: none;
+    color: #000;
+    background: #fff;
+  }
+  .skip-link, nav {
+    display: none;
+  }
+}
+  </style>
 </head>
-
 <body>
 
-<nav>
-<a href="/">Hocbigg</a>
-<a href="/journalism/">Journalism</a>
-<a href="/journalism/advanced_topics.html">Advanced Topics</a>
-<a href="/journalism/projects.html">Projects</a>
-<a href="/journalism/extras/courses.html">Extra Courses</a>
-<a href="/journalism/extras/readings.html">Extra Reading</a>
-<a href="https://github.com/hocbigg/journalism/" target="_blank">View on Github</a>
-</nav>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<main>
-<article>
+  <header class="site-header">
+    <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="https://hocbigg.github.io/" class="nav-brand">Hocbigg</a></li>
+      <li><a href="/journalism/">Journalism</a></li>
+      <li><a href="/journalism/advanced_topics.html">Advanced Topics</a></li>
+      <li><a href="/journalism/projects.html">Projects</a></li>
+      <li><a href="/journalism/extras/readings.html">Extra Readings</a></li>
+      <li><a href="/journalism/extras/courses.html">Extra Courses</a></li>
+      <li><a href="https://github.com/hocbigg/journalism" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    </nav>
+  </header>
 
-<h1 id="advanced-topics">Advanced Topics</h1>
+  <main id="main-content">
+    <article>
+
+<h1 id="advanced-topics-in-journalism">Advanced Topics in Journalism</h1>
+<p>These specialization tracks are designed for learners who have completed foundational training in reporting, media law, and verification, and are ready to pursue advanced methodological or subfield mastery. Learners are encouraged to select one or two tracks aligned with their investigative goals and medium of focus, rather than attempting to complete every track:</p>
 <ul>
-<li><a href="#investigative-track">Investigative Track</a></li>
-<li><a href="#broadcast-track">Broadcast Track</a></li>
-<li><a href="#digital-track">Digital Track</a></li>
-<li><a href="#international-track">International Track</a></li>
+<li><a href="#investigative-and-forensic-journalism">Investigative and Forensic Journalism</a>: Teaches digital open-source intelligence (OSINT), forensic accounting, cross-border investigative consortia, and operational security for source protection.</li>
+<li><a href="#computational-and-data-journalism">Computational and Data Journalism</a>: Explores algorithmic accountability, programmatic web scraping in Python, reproducible statistical inference, and geospatial satellite investigation.</li>
+<li><a href="#narrative-nonfiction-audio-and-documentary-storytelling">Narrative Nonfiction, Audio, and Documentary Storytelling</a>: Examines structural narrative arcs in literary nonfiction, serialized investigative audio design, long-form documentary direction, and trauma-informed interviewing.</li>
+<li><a href="#global-journalism-geopolitics-and-crisis-reporting">Global Journalism, Geopolitics, and Crisis Reporting</a>: Focuses on hostile-environment conflict reporting, comparative global media systems, investigating state disinformation campaigns, and environmental enterprise reporting.</li>
+<li><a href="#news-innovation-media-economics-and-platform-governance">News Innovation, Media Economics, and Platform Governance</a>: Analyzes commercial media economics, newsroom product management, tech platform distribution power, and generative AI newsroom governance.</li>
 </ul>
-<h3 id="investigative-track">Investigative Track</h3>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Why study?</th>
-<th>Book</th>
-<th>Videos</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Advanced Investigative Techniques</strong></td>
-<td>To develop skills for uncovering hidden truths, integrating advanced research with ethical considerations.</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/investigativerep00hous">The Investigative Reporter's Handbook</a></strong> (Brant Houston, Archive.org)</td>
-<td></td>
-</tr>
-<tr>
-<td><strong>Data Journalism</strong></td>
-<td>To use data for storytelling, balancing analytical theory with visualization practice.</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://datajournalism.com/read/handbook/two">The Data Journalism Handbook</a></strong> (Jonathan Gray, free online)</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://datajournalismcourse.net/">Doing Journalism with Data: First Steps, Skills and Tools</a></strong></td>
-</tr>
-<tr>
-<td><strong>Accountability and Watchdog Journalism</strong></td>
-<td>To focus on holding power accountable, synthesizing historical cases with current applications.</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/watchdogjournali0000berr">Watchdog Journalism</a></strong> (Stephen J. Berry, Archive.org)</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://www.journalismnow.org/courses/for-the-record-covering-war-and-conflict">For the Record: Covering War and Conflict</a></strong></td>
-</tr>
-</tbody>
-</table>
-<h3 id="broadcast-track">Broadcast Track</h3>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Why study?</th>
-<th>Book</th>
-<th>Videos</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Broadcast Writing and Production</strong></td>
-<td>To craft stories for audio/visual media, combining scripting theory with production practice.</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://www.amazon.com/Broadcast-News-Writing-Reporting-Producing/dp/0367427400">Broadcast News Writing, Reporting, and Producing</a></strong> (Frank Barnas, publisher page/preview)</td>
-<td></td>
-</tr>
-<tr>
-<td><strong>Audio and Podcast Journalism</strong></td>
-<td>To specialize in sound-based storytelling, emphasizing narrative pacing and technical synthesis.</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/soundreportingnp0000kern">Sound Reporting</a></strong> (NPR Guide, Jonathan Kern, Archive.org)</td>
-<td></td>
-</tr>
-<tr>
-<td><strong>Television and Video Reporting</strong></td>
-<td>To master visual journalism, balancing fieldwork practice with ethical framing.</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://www.amazon.com/Television-Field-Production-Reporting-Storytelling/dp/0415787661">Television Field Production and Reporting</a></strong> (Fred Shook, publisher page/preview)</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h3 id="digital-track">Digital Track</h3>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Why study?</th>
-<th>Book</th>
-<th>Videos</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Digital Storytelling and Social Media</strong></td>
-<td>To leverage online platforms for engagement, integrating platform theory with content creation.</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/multimediastoryt0000gitn">Multimedia Storytelling for Digital Communicators</a></strong> (Seth Gitner, Archive.org)</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://www.futurelearn.com/courses/digital-storytelling">Digital Storytelling</a></strong> (FutureLearn)</td>
-</tr>
-<tr>
-<td><strong>Interactive and Web Journalism</strong></td>
-<td>To create engaging web content, balancing UX design principles with journalistic integrity.</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://www.amazon.com/Online-Journalism-Handbook-Survive-Digital/dp/0367337355">The Online Journalism Handbook</a></strong> (Paul Bradshaw, publisher page/preview)</td>
-<td></td>
-</tr>
-<tr>
-<td><strong>Content Strategy and Analytics</strong></td>
-<td>To optimize digital reach, synthesizing data insights with editorial decisions.</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://ptgmedia.pearsoncmg.com/images/9780321808301/samplepages/0321808304.pdf">Content Strategy for the Web</a></strong> (Kristina Halvorson, sample PDF)</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://www.coursera.org/learn/content-marketing">The Strategy of Content Marketing</a></strong> (Coursera)</td>
-</tr>
-</tbody>
-</table>
-<h3 id="international-track">International Track</h3>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Why study?</th>
-<th>Book</th>
-<th>Videos</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Global Media Systems</strong></td>
-<td>To understand international journalism contexts, fostering cross-cultural synthesis.</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://www.amazon.com/Global-Journalism-Understanding-World-Systems/dp/1538146851">Global Journalism: Understanding World Media Systems</a></strong> (Daniela V. Dimitrova, publisher page/preview)</td>
-<td></td>
-</tr>
-<tr>
-<td><strong>Cross-Cultural Reporting</strong></td>
-<td>To report on diverse cultures ethically, balancing sensitivity theory with fieldwork practice.</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/crossculturaljou0000unse">Cross-Cultural Journalism and Strategic Communication</a></strong> (Maria E. Len-Ríos, Archive.org)</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://www.futurelearn.com/courses/intercultural-communication">Intercultural Communication</a></strong> (FutureLearn)</td>
-</tr>
-<tr>
-<td><strong>Conflict and Crisis Journalism</strong></td>
-<td>To cover high-stakes global events, integrating safety protocols with narrative techniques.</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://www.amazon.com/Insights-Peace-Conflict-Reporting-Journalism/dp/0367859009">Insights on Peace and Conflict Reporting</a></strong> (Kristin Skare Orgeret, publisher page/preview)</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://www.journalismnow.org/courses/for-the-record-covering-war-and-conflict">For the Record: Covering War and Conflict</a></strong></td>
-</tr>
-</tbody>
-</table>
-</article>
-</main>
+<h2 id="investigative-and-forensic-journalism">Investigative and Forensic Journalism</h2>
+<p>This track covers advanced investigative methodologies for exposing transnational crime, corporate malfeasance, state abuse, and institutional corruption.</p>
+<p>Open-Source Intelligence (OSINT) and Digital Forensics: <a href="https://www.ohchr.org/sites/default/files/2024-01/OHCHR_BerkeleyProtocol.pdf" target="_blank" rel="noopener noreferrer">Berkeley Protocol on Digital Open Source Investigations (UN OHCHR &amp; UC Berkeley Human Rights Center)</a> - Establishes international legal and technical standards for identifying, collecting, verifying, and preserving digital open-source information, social media evidence, and satellite imagery for investigative accountability.</p>
+<p>Financial Forensics and Corporate Investigations: <a href="https://tcij.org/handbooks/the-investigative-journalists-guide-to-company-accounts/" target="_blank" rel="noopener noreferrer">The Investigative Journalist's Guide to Company Accounts (Raj Bairoliya / Centre for Investigative Journalism)</a> - A practical open handbook teaching reporters how to read corporate balance sheets, audit profit-and-loss statements, trace shell companies, and detect accounting maneuvers used to conceal fraud.</p>
+<p>Cross-Border Collaborative Investigations: <a href="https://books.google.com/books?isbn=9781138613638" target="_blank" rel="noopener noreferrer">Cross-Border Collaborative Journalism: A Step-by-Step Guide (Brigitte Alfter / Routledge)</a> - The foundational methodology manual on organizing transnational reporting consortia, managing secure shared data repositories, navigating cross-cultural editorial workflows, and synchronizing cross-border publications.</p>
+<p>Whistleblower Protection, Encryption, and Source OpSec: <a href="https://tcij.org/handbooks/infosec/" target="_blank" rel="noopener noreferrer">Information Security for Journalists (Silkie Carlo &amp; Arjen Kamphuis / Centre for Investigative Journalism)</a> - A comprehensive practitioner guide to threat modeling, hardware security, Tails OS, disk encryption, and secure communications protocols required to protect high-risk sources and whistleblowers.</p>
+<h2 id="computational-and-data-journalism">Computational and Data Journalism</h2>
+<p>This track focuses on advanced computational techniques, programming environments, and statistical rigor for uncovering stories within complex codebases and massive datasets.</p>
+<p>Algorithmic Accountability and AI Auditing: <a href="https://books.google.com/books?isbn=9780674976986" target="_blank" rel="noopener noreferrer">Automating the News: How Algorithms Are Rewriting the Media (Nicholas Diakopoulos / Harvard University Press)</a> - The definitive academic text exploring how to investigate algorithmic decision-making, scoring systems, automated news processes, and computational accountability in public life.</p>
+<p>Algorithmic Accountability and AI Auditing: <a href="https://academiccommons.columbia.edu/doi/10.7916/D8ZK5TW2" target="_blank" rel="noopener noreferrer">Algorithmic Accountability Reporting: On the Investigation of Black Boxes (Nicholas Diakopoulos / Tow Center for Digital Journalism)</a> - A companion open-access research guide detailing reverse-engineering methods, input-output auditing frameworks, and investigative approaches for interrogating opaque proprietary algorithms.</p>
+<p>Programmatic Data Extraction and Web Scraping: <a href="https://datajournalism.com/watch/python-for-journalists" target="_blank" rel="noopener noreferrer">Python for Journalists (Winny de Jong / DataJournalism.com)</a> - A structured, free video course that walks reporters through using Jupyter Notebooks, writing automated Python scrapers, and cleaning unstructured text datasets using Pandas.</p>
+<p>Statistical Inference and Precision Journalism: <a href="https://books.google.com/books?isbn=9780226185774" target="_blank" rel="noopener noreferrer">The Chicago Guide to Writing about Numbers (Jane E. Miller / University of Chicago Press)</a> - An authoritative guide to interpreting distributions, regression models, percentage changes, and confidence intervals to ensure quantitative assertions are analytically sound and clearly written.</p>
+<p>Geospatial Investigation and Remote Sensing: <a href="https://gijn.org/resources-for-finding-and-using-satellite-images/" target="_blank" rel="noopener noreferrer">Resources for Finding and Using Satellite Images (Global Investigative Journalism Network)</a> - A comprehensive practitioner guide and tool inventory detailing how to access optical and radar satellite imagery, utilize Google Earth Engine, and apply remote sensing to environmental and human rights investigations.</p>
+<h2 id="narrative-nonfiction-audio-and-documentary-storytelling">Narrative Nonfiction, Audio, and Documentary Storytelling</h2>
+<p>This track examines long-form narrative craft across prose, serialized audio, and documentary film, emphasizing character development, dramatic structure, and ethical immersion.</p>
+<p>Literary Journalism and Narrative Architecture: <a href="https://books.google.com/books?isbn=9780452287556" target="_blank" rel="noopener noreferrer">Telling True Stories: A Nonfiction Writers' Guide from the Nieman Foundation at Harvard University (Mark Kramer &amp; Wendy Call, eds. / Plume)</a> - The benchmark anthology of craft essays by leading narrative journalists, breaking down field reporting immersion, scene reconstruction, voice, pacing, and narrative ethics.</p>
+<p>Long-Form Serial Audio and Sound Design: <a href="https://books.google.com/books?isbn=9781469614403" target="_blank" rel="noopener noreferrer">Reality Radio: Telling True Stories in Sound (John Biewen &amp; Alexa Dilworth, eds. / University of North Carolina Press)</a> - An essential exploration of the documentary audio craft, analyzing acoustic scene-building, multi-track narrative scoring, archival integration, and voice-track writing for serial podcasts.</p>
+<p>Investigative Documentary Filmmaking: <a href="https://books.google.com/books?isbn=9780367235574" target="_blank" rel="noopener noreferrer">Directing the Documentary (Michael Rabiger &amp; Courtney Hermann / Routledge)</a> - The canonical master text on long-form visual dramaturgy, cinéma vérité ethics, interviewing techniques for camera, archival clearances, and structural post-production editing.</p>
+<p>Trauma-Informed Interviewing and Sensitive Reporting: <a href="https://dartcenter.org/resources/dart-center-style-guide" target="_blank" rel="noopener noreferrer">Dart Center Style Guide for Trauma-Informed Journalism (Dart Center for Journalism and Trauma / Columbia Journalism School)</a> - A peer-reviewed open reference guide outlining ethical protocols for interviewing survivors of violence, minimizing re-traumatization, and accurately reporting on psychological trauma.</p>
+<h2 id="global-journalism-geopolitics-and-crisis-reporting">Global Journalism, Geopolitics, and Crisis Reporting</h2>
+<p>This track prepares reporters to navigate complex international media ecosystems, armed conflicts, coordinated influence operations, and cross-border environmental crises.</p>
+<p>War Correspondence and Conflict Zone Reporting: <a href="https://unesdoc.unesco.org/ark:/48223/pf0000243986" target="_blank" rel="noopener noreferrer">Safety Guide for Journalists: A Handbook for Reporters in High-Risk Environments (Reporters Without Borders &amp; UNESCO)</a> - A comprehensive operational field manual covering pre-assignment risk assessments, hostile environment security, battlefield medical preparedness, digital security in conflict zones, and psychological self-care.</p>
+<p>Comparative Media Systems and Press Freedom: <a href="https://books.google.com/books?isbn=9780521543088" target="_blank" rel="noopener noreferrer">Comparing Media Systems: Three Models of Media and Politics (Daniel C. Hallin &amp; Paolo Mancini / Cambridge University Press)</a> - The foundational comparative framework analyzing the relationships between political systems, media market structures, journalistic professionalism, and state intervention across democracies.</p>
+<p>State-Sponsored Disinformation and Information Warfare: <a href="https://datajournalism.com/read/handbook/verification-3" target="_blank" rel="noopener noreferrer">Verification Handbook for Disinformation and Media Manipulation (Craig Silverman, ed. / European Journalism Centre)</a> - A free, open-access field guide detailing practical forensic methodologies for tracking coordinated inauthentic behavior, botnet networks, state-backed influence operations, and manipulated synthetic media.</p>
+<p>Transnational Environmental and Climate Investigation: <a href="https://books.google.com/books?isbn=9781138284418" target="_blank" rel="noopener noreferrer">Covering the Environment: How Journalists Work the Green Beat (Bob Wyss / Routledge)</a> - A comprehensive guide detailing how to investigate environmental regulatory agencies, interpret climate and atmospheric data, untangle resource extraction supply chains, and expose environmental pollution.</p>
+<h2 id="news-innovation-media-economics-and-platform-governance">News Innovation, Media Economics, and Platform Governance</h2>
+<p>This track examines the structural, commercial, and technological forces reshaping the news industry, from subscription economics to platform gatekeeping and artificial intelligence.</p>
+<p>Media Economics, Reader Revenue, and Sustainable Business Models: <a href="https://books.google.com/books?isbn=9780823232574" target="_blank" rel="noopener noreferrer">The Economics and Financing of Media Companies (Robert G. Picard / Fordham University Press)</a> - The standard economic analysis of media firm capital structures, multi-sided markets, advertising elasticity, audience valuation, and emerging reader-revenue architectures.</p>
+<p>Newsroom Product Management and Audience Development: <a href="https://journalismcourses.org/courses/product-strategies-for-journalism-how-to-align-editorial-audience-business-and-technology/" target="_blank" rel="noopener noreferrer">Product Strategies for Journalism: How to Align Editorial, Audience, Business and Technology (Adriana Lacy / Knight Center for Journalism in the Americas)</a> - A free, four-module professional course created with the News Product Alliance that teaches agile workflows, audience conversion funnels, product thinking, and cross-functional newsroom collaboration.</p>
+<p>Platform Power, Algorithmic Intermediation, and Media Policy: <a href="https://books.google.com/books?isbn=9780190889777" target="_blank" rel="noopener noreferrer">The Platform Society: Public Values in a Connective World (José van Dijck, Thomas Poell, &amp; Martijn de Waal / Oxford University Press)</a> - The seminal scholarly text dissecting platformization, algorithmic curation, infrastructural dependence, and regulatory struggles between Big Tech and news organizations.</p>
+<p>Generative AI, Newsroom Integration, and Synthetic Media Ethics: <a href="https://www.journalismai.info/research/2023-generating-change" target="_blank" rel="noopener noreferrer">Generating Change: A Global Survey of What News Organisations Are Doing with AI (Charlie Beckett &amp; Mira Yaseen / Polis, London School of Economics)</a> - An exhaustive global research report analyzing data from 105 newsrooms across 46 countries, outlining practical applications, workflow shifts, algorithmic risks, and editorial governance models for AI in journalism.</p>
+    </article>
+  </main>
 
 </body>
 </html>

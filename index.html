@@ -1,265 +1,417 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light dark">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
 
-<title>Hocbigg - Journalism</title>
-<link rel="stylesheet" href="/journalism/style.css">
-<meta name="description" content="🎓 Path to a free self-taught education in Journalism!">
+  <title>Hocbigg - Journalism</title>
+  <meta name="description" content="🎓 Path to a free self-taught education in Journalism!">
+  <meta name="author" content="hocbigg">
 
-<link rel="canonical" href="https://hocbigg.github.io/journalism/">
+  <link rel="canonical" href="https://hocbigg.github.io/journalism/">
+  <meta property="og:title" content="Hocbigg - Journalism">
+  <meta property="og:description" content="🎓 Path to a free self-taught education in Journalism!">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hocbigg.github.io/journalism/">
+  <link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
 
-<meta property="og:title" content="Hocbigg - Journalism">
-<meta property="og:description" content="🎓 Path to a free self-taught education in Journalism!">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://hocbigg.github.io/journalism/">
-<meta name="author" content="hocbigg">
-<link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
+  <style>
+:root {
+  color-scheme: light dark;
+
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #595959;
+  --border: #e0e0e0;
+  --th-bg: #f6f8fa;
+  --code-bg: #f4f4f4;
+  --link: #0969da;
+  --focus-ring: #0969da;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #8b949e;
+    --border: #30363d;
+    --th-bg: #161b22;
+    --code-bg: #161b22;
+    --link: #58a6ff;
+    --focus-ring: #58a6ff;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1.5rem auto;
+  max-width: 60rem;
+  padding: 0 1rem 3.5rem;
+  background-color: var(--bg);
+  color: var(--fg);
+  font: 1.15rem/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Cú pháp hiện đại thay thế cho word-wrap */
+  overflow-wrap: break-word;
+}
+
+.site-header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem 1.25rem;
+  font-size: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+nav a:hover, 
+nav a:focus-visible {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+nav .nav-brand {
+  color: var(--fg);
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.skip-link {
+  position: absolute;
+  transform: translateY(-150%);
+  left: 1rem;
+  background: var(--fg);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(1rem);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--fg);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+p, ul, ol, blockquote, table {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+li > ul,
+li > ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:has(img) {
+  text-decoration: none;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.page-header .page-subtitle {
+  color: var(--muted);
+  font-size: 1.15rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header img {
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  tab-size: 2;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 0;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.75rem;
+  vertical-align: top;
+}
+
+th {
+  background-color: var(--th-bg);
+  font-weight: 600;
+}
+
+blockquote {
+  margin-inline: 0;
+  border-left: 4px solid var(--border);
+  padding-left: 1rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  body {
+    max-width: none;
+    color: #000;
+    background: #fff;
+  }
+  .skip-link, nav {
+    display: none;
+  }
+}
+  </style>
 </head>
-
 <body>
 
-<nav>
-<a href="/">Hocbigg</a>
-<a href="/journalism/">Journalism</a>
-<a href="/journalism/advanced_topics.html">Advanced Topics</a>
-<a href="/journalism/projects.html">Projects</a>
-<a href="/journalism/extras/courses.html">Extra Courses</a>
-<a href="/journalism/extras/readings.html">Extra Reading</a>
-<a href="https://github.com/hocbigg/journalism/" target="_blank">View on Github</a>
-</nav>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<main>
-<article>
+  <header class="site-header">
+    <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="https://hocbigg.github.io/" class="nav-brand">Hocbigg</a></li>
+      <li><a href="/journalism/">Journalism</a></li>
+      <li><a href="/journalism/advanced_topics.html">Advanced Topics</a></li>
+      <li><a href="/journalism/projects.html">Projects</a></li>
+      <li><a href="/journalism/extras/readings.html">Extra Readings</a></li>
+      <li><a href="/journalism/extras/courses.html">Extra Courses</a></li>
+      <li><a href="https://github.com/hocbigg/journalism" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    </nav>
+  </header>
 
+  <main id="main-content">
+    <article>
 <header class="page-header">
-  <img src="/images/logo.png" alt="">
+  <img src="/images/logo.png" alt="Hocbigg logo">
   <h1>Hocbigg - Journalism</h1>
+  <p class="page-subtitle">🎓 Path to a free self-taught education in Journalism!</p>
+  <p class="last-updated"><small>Last updated on: <time datetime="2026-10-01">2026-10-01</time></small></p>
 </header>
-
-<h1 id="contents">Contents</h1>
+<h2 id="introduction">Introduction</h2>
+<p>Journalism is an empirical discipline of verification, inquiry, and public accountability. At its foundation, it is not merely the act of writing or broadcasting information, but a structured process of establishing verifiable facts, interrogating institutional power, and contextualizing current events for a self-governing public. Studying journalism equips learners with rigorous questioning techniques, evidentiary standards, and narrative precision—skills essential whether your goal is to report for a newsroom, run an independent publication, or critically navigate the contemporary information ecosystem.</p>
+<p>This curriculum establishes the foundational core of an undergraduate journalism education. It is built for self-directed learners and requires no prior newsroom experience, media studies background, or institutional affiliation. Every subject included represents knowledge and practical craft that virtually every reporter, editor, and media practitioner must master before specializing.</p>
+<p>Because journalism is an applied practice, this curriculum balances foundational conceptual texts with practical field guides and open courseware. It intentionally omits hyper-specialized subfields and academic communications research methods to keep your study focused on core newsgathering, writing, and editorial standards.</p>
+<p>While individual subjects can be consulted independently, they are organized into a logical learning path from fundamental craft to complex reporting formats:</p>
 <ul>
-<li><a href="#summary">Summary</a></li>
-<li><a href="#communities">Communities</a></li>
-<li><a href="#curriculum">Curriculum</a></li>
-<li><a href="#code-of-conduct">Code of conduct</a></li>
+<li><strong>Foundational Craft and Reporting Routines:</strong> Begin with <em>Foundations and History of Journalism</em> to understand news values, press theories, and the democratic role of the Fourth Estate. Move immediately into <em>News Writing and Reporting</em>, <em>Interviewing, Observation, and Sourcing</em>, and <em>Copy Editing and News Style</em>. These subjects establish the primary mechanics of reporting: finding human sources, conducting interviews, structuring a hard-news story using the inverted pyramid, and editing copy for clarity, syntax, and accuracy.</li>
+<li><strong>Evidentiary and Legal Guardrails:</strong> Before reporting enterprise stories, work through <em>Verification and Fact-Checking</em>, <em>Media Law and Freedom of Expression</em>, and <em>Media Ethics and Professional Standards</em>. These subjects teach you how to authenticate user-generated content, navigate legal boundaries regarding defamation, privacy, and open records, and apply structured ethical decision-making to harm minimization and conflicts of interest.</li>
+<li><strong>In-Depth Investigation and Multiplatform Reporting:</strong> Once the basic craft and legal standards are established, proceed to <em>Investigative Reporting and Public Records</em>, <em>Digital Storytelling and Social Media Reporting</em>, <em>Multimedia Journalism (Audio and Visual Storytelling)</em>, and <em>Data Journalism and Numeracy</em>. These subjects expand your toolkit into hypothesis-driven investigation, Freedom of Information Act (FOIA) requests, spreadsheet numeracy, and audio-visual packaging.</li>
 </ul>
-<h1 id="summary">Summary</h1>
-<p>This roadmap provides a structured, self-paced curriculum equivalent to a 4-year undergraduate degree in Journalism.</p>
-<h2 id="organization">Organization</h2>
-<p>This repository is organized into three main components:</p>
+<p>Mastering these foundational subjects prepares you to produce accurate, legally sound, and compelling news reporting. Once you have completed this core, you can branch out into practical and specialized extensions:</p>
 <ul>
-<li><strong>Core Curriculum</strong> (this page): the foundational knowledge of the field;</li>
-<li><strong><a href="advanced_topics.html">Advanced Topics</a></strong>: focused study in specific areas;</li>
-<li><strong><a href="projects.html">Projects</a></strong>: support learning through practical application throughout the curriculum.</li>
+<li>Explore specialized subfields—such as corporate financial forensics, cross-border collaborative reporting, or algorithmic accountability—in <a href="advanced_topics.html">Advanced Topics</a>.</li>
+<li>Put these concepts into practice using structured reporting workflows, beat memos, and public records request templates in <a href="projects.html">Projects</a>.</li>
+<li>Deepen your historical, sociological, and narrative perspective through landmark muckraking classics, press theory essays, and narrative nonfiction in <a href="extras/readings.html">Readings</a>.</li>
+<li>Supplement your reading with structured lecture series and video workshops led by investigative reporters and editors in <a href="extras/courses.html">Courses</a>.</li>
 </ul>
-<p><strong>Process:</strong> Learners may work through the curriculum independently or collaboratively, and either sequentially or selectively.</p>
-<ul>
-<li>For simplicity, courses in the Core Curriculum are ordered according to their prerequisites.</li>
-<li>The Core Curriculum provides a shared foundation and is intended to be completed in full.</li>
-<li>Advanced Topics are optional; learners are encouraged to select one area of focus and complete all courses within that topic.</li>
-</ul>
-<p>Practical work is integrated through the <a href="projects.html">Projects section</a> and may be undertaken alongside coursework.</p>
-<p>Note: When there are courses or books that don't fit into the curriculum but are otherwise of high quality,
-they belong in <a href="extras/courses.html">extras/courses</a>, <a href="extras/readings.html">extras/readings</a>.</p>
-<p><strong><a href="/CONTRIBUTING.html">How to contribute</a></strong></p>
-<h1 id="communities">Communities</h1>
+<h3 id="communities">Communities</h3>
 <ul>
 <li>Forums:<ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.journalism.co.uk/forums/">Journalism.co.uk Forums</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://splc.org/forums/">Student Press Law Center Forums</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.spj.org/quorum/">Society of Professional Journalists Quorum</a></li>
+<li><a href="https://www.journalism.co.uk/forums/" target="_blank" rel="noopener noreferrer">Journalism.co.uk Forums</a></li>
+<li><a href="https://splc.org/forums/" target="_blank" rel="noopener noreferrer">Student Press Law Center Forums</a></li>
+<li><a href="https://www.spj.org/quorum/" target="_blank" rel="noopener noreferrer">Society of Professional Journalists Quorum</a></li>
 </ul>
 </li>
 <li>Subreddits:<ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.reddit.com/r/Journalism/">r/Journalism</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.reddit.com/r/JournalismEthics/">r/JournalismEthics</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.reddit.com/r/investigativejournalism/">r/investigativejournalism</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.reddit.com/r/DataJournalism/">r/DataJournalism</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.reddit.com/r/JournalismTips/">r/JournalismTips</a></li>
+<li><a href="https://www.reddit.com/r/Journalism/" target="_blank" rel="noopener noreferrer">r/Journalism</a></li>
+<li><a href="https://www.reddit.com/r/JournalismEthics/" target="_blank" rel="noopener noreferrer">r/JournalismEthics</a></li>
+<li><a href="https://www.reddit.com/r/investigativejournalism/" target="_blank" rel="noopener noreferrer">r/investigativejournalism</a></li>
+<li><a href="https://www.reddit.com/r/DataJournalism/" target="_blank" rel="noopener noreferrer">r/DataJournalism</a></li>
+<li><a href="https://www.reddit.com/r/JournalismTips/" target="_blank" rel="noopener noreferrer">r/JournalismTips</a></li>
 </ul>
 </li>
 <li>Other:<ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://journa.host/">Journa.host (Mastodon Instance)</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://newsie.social/">Newsie.social (Mastodon Instance)</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://sourceopennews.org/slack/">Source Slack</a></li>
+<li><a href="https://journa.host/" target="_blank" rel="noopener noreferrer">Journa.host (Mastodon Instance)</a></li>
+<li><a href="https://newsie.social/" target="_blank" rel="noopener noreferrer">Newsie.social (Mastodon Instance)</a></li>
+<li><a href="https://sourceopennews.org/slack/" target="_blank" rel="noopener noreferrer">Source Slack</a></li>
 </ul>
 </li>
-<li>You can also interact through <a target="_blank" rel="noopener noreferrer" href="https://github.com/hocbigg/journalism/issues">GitHub issues</a>. If there is a problem with a course, or a change needs to be made to the curriculum, this is the place to start the conversation. Read more <a href="/CONTRIBUTING.html">here</a>.</li>
-<li>
-<p>Join our Discord server (for discussions around this and other curricula): </p>
-<p><a target="_blank" rel="noopener noreferrer" href="https://discord.gg/KHqAv4Nvm5"><img alt="discord link" src="/assets/discord.png" /></a></p>
-</li>
+<li>You can also interact through <a href="https://github.com/hocbigg/journalism/issues" target="_blank" rel="noopener noreferrer">GitHub issues</a>. If there is a problem with a course, or a change needs to be made to the curriculum, this is the place to start the conversation. Read more <a href="/CONTRIBUTING.html">here</a>.</li>
 </ul>
-<h1 id="curriculum">Curriculum</h1>
-<ul>
-<li><a href="#orientation-and-professional-foundations">Orientation and Professional Foundations</a></li>
-<li><a href="#core-reporting-writing-and-editing-skills">Core Reporting, Writing, and Editing Skills</a></li>
-<li><a href="#verification-ethics-and-law">Verification, Ethics, and Law</a></li>
-<li><a href="#research-and-investigative-foundations">Research and Investigative Foundations</a></li>
-<li><a href="#digital-and-multimedia-journalism-foundations">Digital and Multimedia Journalism Foundations</a></li>
-</ul>
-<h2 id="orientation-and-professional-foundations">Orientation and Professional Foundations</h2>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Why study?</th>
-<th>Book</th>
-<th>Videos</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Introduction to Journalism</td>
-<td>Establishes the purpose, values, and democratic role of journalism.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.amazon.com/Elements-Journalism-What-Newspeople-Public/dp/0804136785">The Elements of Journalism</a> (Kovach &amp; Rosenstiel, canonical text)</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.coursera.org/specializations/become-a-journalist">Become a Journalist: Report the News!</a> (Coursera, Michigan State University specialization)</td>
-</tr>
-<tr>
-<td>Media Literacy and Critical Thinking</td>
-<td>Develops analytical skills for evaluating sources and misinformation.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.semanticscholar.org/paper/The-Teacher%E2%80%99s-Guide-to-Media-Literacy%3A-Critical-in-Scheibe-Rogow/ffe6fab63371379c7734ba3daee2ed4813c6f107">Teacher’s Guide to Media Literacy</a> (Scheibe &amp; Rogow, academic previews and discussions)</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.coursera.org/learn/news-literacy">Making Sense of the News</a> (Coursera, University of Hong Kong)</td>
-</tr>
-<tr>
-<td>History and Sociology of Media</td>
-<td>Contextualizes journalism within political, social, and technological change.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/21stcenturymedia0000macn">Media and Society into the 21st Century</a> (various related editions on Archive.org)</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://ocw.mit.edu/courses/cms-876-history-of-media-and-technology-spring-2005/">History of Media and Technology</a> (MIT OCW)</td>
-</tr>
-</tbody>
-</table>
-<h2 id="core-reporting-writing-and-editing-skills">Core Reporting, Writing, and Editing Skills</h2>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Why study?</th>
-<th>Book</th>
-<th>Videos</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>News Writing and Reporting</td>
-<td>Teaches story structure, sourcing, interviewing, leads, inverted pyramid, clarity, and AP style basics.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.mheducation.com/highered/product/inside-reporting-harrower/M9781260831764.html">Inside Reporting</a> (Tim Harrower, engaging beginner textbook)</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.coursera.org/specializations/become-a-journalist">Become a Journalist: Report the News!</a> (Coursera)</td>
-</tr>
-<tr>
-<td>Interviewing and Sourcing</td>
-<td>Builds evidence-based reporting through human sources.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.mheducation.com/highered/product/inside-reporting-harrower/M9781260831764.html">Inside Reporting</a> (interviewing chapters)</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.poynter.org/reporting-editing/2023/illustrated-guide-interviewing-basics-journalism/">An illustrated guide to the basics of interviewing</a> (Poynter)</td>
-</tr>
-<tr>
-<td>Editing and News Judgment</td>
-<td>Develops accuracy, balance, and editorial decision-making.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.mheducation.com/highered/product/inside-reporting-harrower/M9781260831764.html">Inside Reporting</a> (editing chapters)</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.poynter.org/">Poynter: Editing &amp; Headlines</a> (various editing resources; specific courses may require search on Poynter site)</td>
-</tr>
-</tbody>
-</table>
-<h2 id="verification-ethics-and-law">Verification, Ethics, and Law</h2>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Why study?</th>
-<th>Book</th>
-<th>Videos</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Verification and Fact-Checking</td>
-<td>Prevents misinformation and strengthens credibility.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="http://verificationhandbook.com/">Verification Handbook</a> (Silverman, ed., free online)</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://firstdraftnews.org/articles/verifying-online-information-the-absolute-essentials/">First Draft News: Verification Guides</a> (essential guides and toolbox)</td>
-</tr>
-<tr>
-<td>Media Ethics and Accountability</td>
-<td>Explores professional responsibility and moral dilemmas.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.spj.org/ethics/">Media Ethics: A Guide For Professional Conduct</a> (SPJ, standard concise guide)</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.coursera.org/learn/media-ethics-governance">Media Ethics &amp; Governance</a> (Coursera, University of Amsterdam)</td>
-</tr>
-<tr>
-<td>Journalism Law and Regulation</td>
-<td>Explains legal constraints and protections for journalists.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.open.edu/openlearn/society-politics-law/starting-law/content-section-0">Open University: Journalism Law</a> (related OpenLearn law resources)</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.open.edu/openlearn/society-politics-law/starting-law/content-section-0">Journalism Law for the Digital Age</a> (OpenLearn, related free modules)</td>
-</tr>
-<tr>
-<td>Journalist Safety and Risk Awareness</td>
-<td>Prepares journalists for physical, digital, and legal risks.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://cpj.org/security/guide/">CPJ Journalist Safety Guide</a> (free online)</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://cpj.org/safety-kit/">CPJ Safety Training Videos</a> (various safety resources and notes)</td>
-</tr>
-</tbody>
-</table>
-<h2 id="research-and-investigative-foundations">Research and Investigative Foundations</h2>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Why study?</th>
-<th>Book</th>
-<th>Videos</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Journalistic Research Methods</td>
-<td>Trains systematic investigation and evidence evaluation.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="http://verificationhandbook.com/">Verification Handbook</a> (free online)</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.coursera.org/learn/research-methods">Understanding Research Methods</a> (Coursera, related general methods)</td>
-</tr>
-<tr>
-<td>Investigative Techniques</td>
-<td>Enables accountability reporting and document analysis.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/investigativerep00hous">The Investigative Reporter's Handbook</a> (Brant Houston, Archive.org)</td>
-<td>—</td>
-</tr>
-</tbody>
-</table>
-<h2 id="digital-and-multimedia-journalism-foundations">Digital and Multimedia Journalism Foundations</h2>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Why study?</th>
-<th>Book</th>
-<th>Videos</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Digital Storytelling and Social Media</td>
-<td>Adapts reporting to online platforms and audiences.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/multimediastoryt0000gitn">Multimedia Storytelling for Digital Communicators</a> (Seth Gitner, Archive.org)</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.futurelearn.com/courses/digital-storytelling">Digital Storytelling</a> (FutureLearn)</td>
-</tr>
-<tr>
-<td>Multimedia and Visual Journalism</td>
-<td>Integrates text, audio, video, and visuals.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/soundreportingnp0000kern">Sound Reporting</a> (NPR Guide, Archive.org)</td>
-<td>—</td>
-</tr>
-<tr>
-<td>Data Journalism Basics</td>
-<td>Introduces data as a reporting source and narrative tool.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://datajournalism.com/read/handbook/one">The Data Journalism Handbook</a> (Jonathan Gray et al., free online)</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://datajournalismcourse.net/">Doing Journalism with Data: First Steps, Skills and Tools</a> (free course)</td>
-</tr>
-</tbody>
-</table>
-<h1 id="code-of-conduct">Code of conduct</h1>
-<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/hocbigg/code-of-conduct">Hocbigg's code of conduct</a>.</p>
-</article>
-</main>
+<h2 id="curriculum">Curriculum</h2>
+<h3 id="foundations-and-history-of-journalism">Foundations and History of Journalism</h3>
+<p>This subject covers the democratic purpose, constitutional role, historical evolution, and core operating principles of journalism as the Fourth Estate.</p>
+<p><a href="https://books.google.com/books?isbn=9780593239353" target="_blank" rel="noopener noreferrer">The Elements of Journalism: What Newspeople Should Know and the Public Should Expect (Bill Kovach &amp; Tom Rosenstiel)</a> - The primary theoretical text defining the democratic mandate, truth obligations, and core principles of the profession.</p>
+<p><a href="https://books.google.com/books?isbn=9780195189919" target="_blank" rel="noopener noreferrer">A History of News (Mitchell Stephens)</a> - A historical companion to Kovach and Rosenstiel that traces how news gathering, dissemination, and public communication evolved from oral tradition to modern mass media.</p>
+<p><a href="https://www.coursera.org/learn/what-is-news" target="_blank" rel="noopener noreferrer">What Is News? (Coursera / Michigan State University)</a> - A structured video course introducing fundamental news values, audience trust, and reporting functions in modern media ecosystems.</p>
+<h3 id="news-writing-and-reporting">News Writing and Reporting</h3>
+<p>This subject covers the core mechanics of newswriting, including the inverted pyramid structure, lead writing, beat reporting, and objective deadline drafting.</p>
+<p><a href="https://books.google.com/books?isbn=9780073526171" target="_blank" rel="noopener noreferrer">Inside Reporting: A Practical Guide to the Craft of Journalism (Tim Harrower)</a> - The foundational visual textbook for mastering story architecture, hard-news leads, and beat coverage routines.</p>
+<p><a href="https://www.coursera.org/specializations/become-a-journalist" target="_blank" rel="noopener noreferrer">Become a Journalist: Report the News! Specialization (Coursera / Michigan State University)</a> - An applied video sequence designed to be completed alongside Harrower, providing hands-on reporting assignments and structured peer reviews.</p>
+<h3 id="interviewing-observation-and-sourcing">Interviewing, Observation, and Sourcing</h3>
+<p>This subject covers human source discovery, question design, interview psychology, field observation, and source management ethics.</p>
+<p><a href="https://books.google.com/books?isbn=9781305077331" target="_blank" rel="noopener noreferrer">Writing and Reporting News: A Coaching Method (Carole Rich)</a> - The primary practical text using real-world newsroom examples to coach reporters on source development, note-taking, and listening techniques.</p>
+<p><a href="https://books.google.com/books?isbn=9780394724690" target="_blank" rel="noopener noreferrer">The Craft of Interviewing (John Brady)</a> - A specialized companion to Rich that provides tactical guidance on handling reluctant subjects, off-the-record agreements, and conversational dynamics.</p>
+<p><a href="https://www.coursera.org/learn/gather-develop-news" target="_blank" rel="noopener noreferrer">Gathering and Developing the News (Coursera / Michigan State University)</a> - An interactive video course that provides structured exercises for identifying source networks and conducting preliminary interviews.</p>
+<h3 id="copy-editing-and-news-style">Copy Editing and News Style</h3>
+<p>This subject covers line editing, grammatical precision, Associated Press style guidelines, headline writing, and newsroom editorial standards.</p>
+<p><a href="https://books.google.com/books?isbn=9780367820107" target="_blank" rel="noopener noreferrer">The Art of Editing in the Age of Convergence (Brian S. Brooks &amp; James L. Pinson)</a> - The standard newsroom textbook teaching macro- and micro-editing, headline packaging, cutline formulation, and desk editorial judgment.</p>
+<p><a href="https://www.coursera.org/specializations/good-with-words-writing-and-editing" target="_blank" rel="noopener noreferrer">Good with Words: Writing and Editing Specialization (Coursera / University of Michigan)</a> - A practical video companion to Brooks and Pinson focusing specifically on syntax flow, sentence-level concision, and systematic self-editing.</p>
+<h3 id="verification-and-fact-checking">Verification and Fact-Checking</h3>
+<p>This subject covers digital content verification, image and video forensics, geolocation, source authentication, and open-source intelligence methods.</p>
+<p><a href="https://datajournalism.com/read/handbook/verification-1" target="_blank" rel="noopener noreferrer">Verification Handbook: A Definitive Guide to Verifying Digital Content for Emergency Coverage (Craig Silverman, ed., European Journalism Centre)</a> - The open-access field manual detailing professional workflows for authenticating user-generated media and real-time eyewitness claims.</p>
+<p><a href="https://datajournalism.com/watch/verification-the-basics" target="_blank" rel="noopener noreferrer">Verification: The Basics (European Journalism Centre / DataJournalism.com)</a> - A companion video course taught by the handbook's authors that demonstrates practical tools for geolocation, reverse image search, and digital provenance checks.</p>
+<p><a href="https://www.youtube.com/playlist?list=PL8dPuuaLjXtN07XYqqWSKpPrtNDiCHTzU" target="_blank" rel="noopener noreferrer">Crash Course: Navigating Digital Information (YouTube / CrashCourse &amp; SHEG)</a> - A fast-paced video series teaching lateral reading, click restraint, and evidentiary evaluation developed in partnership with the Stanford History Education Group.</p>
+<h3 id="media-law-and-freedom-of-expression">Media Law and Freedom of Expression</h3>
+<p>This subject covers legal boundaries governing the press, including defamation and libel standards, invasion of privacy, reporter's privilege, copyright, and freedom of information laws.</p>
+<p><a href="https://books.google.com/books?isbn=9781260837421" target="_blank" rel="noopener noreferrer">Mass Media Law (Clay Calvert, Dan V. Kozlowski, &amp; Derigan Silver)</a> - The comprehensive academic textbook covering essential legal doctrines, First Amendment jurisprudence, and digital publishing liability.</p>
+<p><a href="https://www.rcfp.org/resources/first-amendment-handbook/" target="_blank" rel="noopener noreferrer">The First Amendment Handbook (Reporters Committee for Freedom of the Press)</a> - A free, practical field manual that translates legal doctrine into immediate guidance on resisting subpoenas, protecting sources, and asserting public access rights.</p>
+<h3 id="media-ethics-and-professional-standards">Media Ethics and Professional Standards</h3>
+<p>This subject covers moral decision-making frameworks, conflict-of-interest management, harm minimization, anonymous sourcing, and newsroom accountability.</p>
+<p><a href="https://books.google.com/books?isbn=9781138041110" target="_blank" rel="noopener noreferrer">Doing Ethics in Media: Theories and Practical Applications (Jay Black &amp; Chris Roberts)</a> - The core textbook applying classical moral philosophies and a structured decision-making model to contemporary newsroom dilemmas.</p>
+<p><a href="https://www.coursera.org/learn/media-ethics-governance" target="_blank" rel="noopener noreferrer">Media Ethics &amp; Governance (Coursera / University of Amsterdam)</a> - An online lecture course that complements Black and Roberts by examining media accountability systems, institutional regulation, and moral reasoning.</p>
+<h3 id="investigative-reporting-and-public-records">Investigative Reporting and Public Records</h3>
+<p>This subject covers hypothesis-driven investigative inquiry, statutory public records retrieval (FOIA), document trails, court docket analysis, and source security.</p>
+<p><a href="https://unesdoc.unesco.org/ark:/48223/pf0000193078" target="_blank" rel="noopener noreferrer">Story-Based Inquiry: A Manual for Investigative Journalists (Mark Lee Hunter et al., UNESCO)</a> - The foundational open-access manual that outlines how to organize long-term investigations through hypotheses, timelines, and structured evidence matrices.</p>
+<p><a href="https://books.google.com/books?isbn=9781319102845" target="_blank" rel="noopener noreferrer">The Investigative Reporter's Handbook: A Guide to Documents, Databases, and Techniques (Brant Houston &amp; Investigative Reporters and Editors)</a> - A detailed operational companion to Hunter that shows how to systematically locate, decode, and analyze public filings, court transcripts, and corporate databases.</p>
+<h3 id="digital-storytelling-and-social-media-reporting">Digital Storytelling and Social Media Reporting</h3>
+<p>This subject covers web-native journalism formats, live coverage, social newsgathering, mobile reporting workflows, and audience engagement strategies.</p>
+<p><a href="https://books.google.com/books?isbn=9781544309446" target="_blank" rel="noopener noreferrer">Journalism Next: A Practical Guide to Digital Innovation (Mark Briggs)</a> - The core handbook covering the technological shifts, digital workflows, and publishing formats required in modern digital newsrooms.</p>
+<p><a href="https://reutersdigitaljournalism.com/" target="_blank" rel="noopener noreferrer">Reuters Digital Journalism Course (Reuters &amp; Meta Journalism Project)</a> - A free, self-paced certification course designed to reinforce Briggs through interactive modules on mobile reporting, online newsgathering, and social curation.</p>
+<h3 id="multimedia-journalism-audio-and-visual-storytelling">Multimedia Journalism (Audio and Visual Storytelling)</h3>
+<p>This subject covers visual framing, news photojournalism, digital video production, field audio capture, podcast development, and multiplatform story packaging.</p>
+<p><a href="https://books.google.com/books?isbn=9781138725911" target="_blank" rel="noopener noreferrer">Multimedia Journalism: A Practical Guide (Andy Bull)</a> - The comprehensive technical textbook detailing how to conceptualize, shoot, record, and assemble cross-platform visual and digital packages.</p>
+<p><a href="https://books.google.com/books?isbn=9780226431789" target="_blank" rel="noopener noreferrer">Sound Reporting: The NPR Guide to Audio Journalism and Production (Jonathan Kern)</a> - A specialized companion to Bull focusing strictly on the audio medium, covering ambient sound recording, voice-track writing, and audio narrative structure.</p>
+<h3 id="data-journalism-and-numeracy">Data Journalism and Numeracy</h3>
+<p>This subject covers newsroom math, spreadsheet analysis, dataset hygiene, rate calculations, and introductory data visualization for news stories.</p>
+<p><a href="https://datajournalism.com/read/handbook/one" target="_blank" rel="noopener noreferrer">The Data Journalism Handbook (Jonathan Gray, Liliana Bounegru, &amp; Lucy Chambers, eds., European Journalism Centre)</a> - An open-access guide detailing real-world data reporting case studies, source extraction methods, and newsroom workflows from international investigative teams.</p>
+<p><a href="https://datajournalism.com/watch/doing-journalism-with-data-first-steps-skills-and-tools" target="_blank" rel="noopener noreferrer">Doing Journalism with Data: First Steps, Skills and Tools (European Journalism Centre / DataJournalism.com)</a> - A structured video course providing hands-on instruction in spreadsheet formulas, pivot tables, data cleaning, and basic news charting tools.</p>
+    </article>
+  </main>
 
 </body>
 </html>
